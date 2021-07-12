@@ -1,13 +1,15 @@
-@import "variable.scss";
+@import "variable";
 
 .header {
-  width: 90%;
+  width: 100%;
   margin: auto;
   background-color: #f8f9fa;
   padding: 10px 0;
 }
 
 .navbar {
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 
@@ -15,6 +17,11 @@
     width: 30%;
     display: flex;
     align-items: flex-start;
+
+    .navbar-brand {
+      width: 100%;
+      margin: auto;
+    }
   }
 }
 
@@ -25,6 +32,7 @@
   .nav-item {
     padding: 0px 15px;
     border-radius: 20px;
+    font-size: 95%;
 
     &:hover {
       background-color: $bg-color;
@@ -32,15 +40,20 @@
   }
 }
 
-.navbar-light .navbar-nav .active > .nav-link {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  color: $txt-color;
-  float: right;
-  text-transform: uppercase;
+.navbar-light 
+.navbar-nav 
+.active {
+
+  .nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: $txt-color;
+    float: right;
+    text-transform: uppercase;
+  }
 }
 
-// responsive
+// responsive Medium devices
 @media only screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -51,8 +64,8 @@
     .logo {
       display: flex;
       justify-content: center;
-      width: 50%;
-      padding: 1%;
+      width: 60%;
+      text-align: center;
     }
   }
 
@@ -66,26 +79,36 @@
     .navbar-nav {
       display: flex;
       flex-direction: row;
+
+      .nav-item {
+        padding: 0 10px;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 576px) {
+// responsive Small devices
+@media only screen and (max-width: 414px) {
   .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 
     .logo {
       display: block;
       position: relative;
       top: 0;
       padding: 0;
-      width: 60%;
+      width: 65%;
 
       .navbar-brand {
-        padding-top: 0;
+        padding: 0;
       }
+    }
+
+    .btn-navbar {
+      width: 100%;
     }
   }
 
@@ -96,7 +119,7 @@
     top: 0;
     padding: 0;
     border: 0;
-    margin-top: 5%;
+    margin-top: 4%;
 
     .navbar-toggler-icon {
       font-size: small;
