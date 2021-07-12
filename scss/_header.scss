@@ -1,3 +1,5 @@
+@import "variable.scss";
+
 .header {
   width: 90%;
   margin: auto;
@@ -16,31 +18,30 @@
   }
 }
 
-ul.navbar-nav {
+.navbar-nav {
   align-items: center;
   margin-top: 1.5%;
 
-  li {
+  .nav-item {
     padding: 0px 15px;
     border-radius: 20px;
 
     &:hover {
-      background-color: #b2d235;
-    }
-
-    a {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 700;
-      color: #505353 !important;
-      float: right;
-      text-transform: uppercase;
+      background-color: $bg-color;
     }
   }
 }
 
-// responsive
-@media (max-width: 768px) {
+.navbar-light .navbar-nav .active > .nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: $txt-color;
+  float: right;
+  text-transform: uppercase;
+}
 
+// responsive
+@media only screen and (max-width: 768px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -69,12 +70,11 @@ ul.navbar-nav {
   }
 }
 
-@media (max-width: 576px) {
-
+@media only screen and (max-width: 576px) {
   .navbar {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 
     .logo {
       display: block;
