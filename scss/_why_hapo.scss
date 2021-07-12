@@ -1,0 +1,149 @@
+.why-hapo {
+  width: 100%;
+  padding: 0;
+  margin-top: 100px;
+
+  .row {
+    margin: 0;
+  }
+}
+
+.container-laptop {
+  position: relative;
+
+  .img-laptop {
+    position: absolute;
+    left: 0;
+    bottom: -23em;
+  }
+}
+
+.row-why-hapo {
+  height: 600px;
+  background-image: url("../images/bg_why_hapo.png");
+  background-size: cover;
+  margin-top: 100px;
+
+  .col-why-hapo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .txt-why-hapo {
+      font-size: 55px;
+      color: white;
+    }
+
+    .txt-content {
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+
+.col-left {
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.col-right {
+  justify-content: center;
+
+  .img-computer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-laptop {
+    position: relative;
+
+    .img-laptop {
+      position: absolute;
+      left: 0;
+      bottom: -14em;
+      width: 36%;
+    }
+  }
+
+  .row-why-hapo {
+    height: 435px;
+    background-image: url("../images/bg_why_hapo.png");
+    margin-top: 100px;
+
+    .col-why-hapo {
+      align-items: center;
+
+      .txt-why-hapo {
+        font-size: 40px;
+        color: white;
+      }
+
+      .txt-content {
+        color: white;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .col-left {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .col-right {
+    justify-content: center;
+    align-items: center;
+
+    .img-computer {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .why-hapo {
+    margin-top: 55px;
+  }
+
+  .container-laptop {
+    .img-laptop {
+      bottom: -11em;
+      width: 50%;
+    }
+  }
+
+  .row-why-hapo {
+    height: 565px;
+
+    .col-why-hapo {
+      margin: 0;
+      width: 100%;
+
+      .txt-why-hapo {
+        font-size: 45px;
+        width: 35%;
+        margin-bottom: 30px;
+      }
+
+      .txt-content {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .col-left {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .col-right {
+    justify-content: flex-start;
+    align-items: center;
+
+    .img-computer {
+      width: 80%;
+    }
+  }
+}

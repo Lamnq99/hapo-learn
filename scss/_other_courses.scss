@@ -1,0 +1,150 @@
+.other-courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container-title {
+    text-align: center;
+
+    .txt-container-title {
+      display: inline-block;
+      margin: 70px 0 56px 0;
+      font-size: 50px;
+      color: $txt-bg-color;
+      border-bottom: 5px $bg-color solid;
+    }
+  }
+
+  .row-other-courses {
+    width: 85%;
+    margin: 0 0 30px 0;
+
+    .col-courses {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.bg-css {
+  background: $bg-css;
+  height: 200px;
+  @include bg-card;
+  
+  .img-css {
+    width: 70%;
+  }
+}
+
+.bg-ruby {
+  background: $bg-ruby;
+  height: 200px;
+  @include bg-card;
+
+  .img-ruby {
+    width: 70%;
+  }
+}
+
+.bg-java {
+  background: $bg-java;
+  height: 200px;
+  @include bg-card;
+
+  .img-java {
+    width: 70%;
+  }
+}
+
+.all-courses {
+  text-align: center;
+
+  .btn-all-courses {
+    color: $bg-color;
+    text-decoration: none;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .other-courses {
+    .container-title {
+      .txt-container-title {
+        margin: 55px 0 40px 0;
+      }
+    }
+
+    .row-other-courses {
+      width: 100%;
+      margin: 0 0 20px 0;
+
+      .col-courses {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .bg-css {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .bg-ruby {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .bg-java {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .all-courses {
+    .btn-all-courses {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .other-courses {
+    .container-title {
+      .txt-container-title {
+        margin: 10px 0 15px 0;
+        font-size: 35px;
+      }
+    }
+
+    .row-other-courses {
+      width: 100%;
+      margin: 0;
+
+      .col-courses {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .bg-css {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .bg-ruby {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .bg-java {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .all-courses {
+    .btn-all-courses {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.background-grey {
+  padding-bottom: 150px;
+  background-image: linear-gradient(0deg, $bg-grey, white);
+}
+
+.courses {
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+
+  .row-courses {
+    width: 85%;
+    margin: 0;
+
+    .col-courses {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: $box-shadow;
+  width: 100%;
+  height: fit-content;
+}
+
+.bg-html {
+  background: $bg-html;
+  height: 200px;
+  @include bg-card;
+
+  .img-html {
+    width: 70%;
+  }
+}
+
+.bg-laravel {
+  background: $bg-laravel;
+  height: 200px;
+  @include bg-card;
+
+  .img-laravel {
+    width: 70%;
+  }
+}
+
+.bg-php {
+  background: $bg-php;
+  height: 200px;
+  @include bg-card;
+
+  .img-php {
+    width: 70%;
+  }
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px;
+
+  .card-title {
+    font-family: $font-Roboto;
+    font-weight: 800;
+    color: $bg-color;
+    font-size: 23px;
+    margin: 10px 0;
+  }
+
+  .card-text {
+    font-family: $font-Roboto;
+    margin: 0;
+    font-size: 16px;
+    color: $txt-color;
+    margin-bottom: 0.5rem;
+    @include three-dot;
+  }
+
+  .btn-take-course {
+    background: $bg-color;
+    box-shadow: $box-shadow-btn;
+    border-radius: 22px;
+    width: 90%;
+    font-size: 20px;
+    margin: 10px 0;
+    color: white;
+    font-family: $font-Roboto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .courses {
+    .row-courses {
+      width: 100%;
+
+      .col-courses {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 5px;
+
+    .card-title {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .card-text {
+      font-size: 13px;
+    }
+
+    .btn-take-course {
+      padding: 4px 12px;
+      font-size: 13px;
+    }
+  }
+
+  .bg-html {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .bg-laravel {
+    height: 125px;
+    background-size: contain;
+  }
+
+  .bg-php {
+    height: 125px;
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .background-grey {
+    width: 100%;
+    height: 280px;
+  }
+
+  .courses {
+    margin-top: -15%;
+  }
+
+  .card {
+    width: 70%;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,142 @@
+.header {
+  padding: 0;
+  background-color: $bg-header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .navbar {
+    width: 90%;
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+.logo {
+  width: 35%;
+  padding: 0;
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .img-logo {
+    width: 100%;
+  }
+}
+
+.btn-navbar {
+  width: 65%;
+  padding: 0;
+  display: flex;
+
+  .collapse {
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.nav-item {
+  padding: 0px 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  &:hover {
+    background-color: $bg-color;
+  }
+
+  .text-secondary {
+    font-family: $font-OpenS;
+    font-weight: 700;
+    color: $txt-color;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    .navbar {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    width: 45%;
+  }
+
+  .btn-navbar {
+    width: 100%;
+
+    .collapse {
+      padding: 10px 0;
+
+      .navbar-nav {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .header {
+    .navbar {
+      padding: 10px 0;
+    }
+  }
+
+  .logo {
+    width: 50%;
+
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+    }
+
+    .img-logo {
+      width: 100%;
+    }
+  }
+
+  .btn-navbar {
+    .navbar-toggler {
+      border: 0;
+      position: absolute;
+      top: 15px;
+
+      .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+      }
+    }
+
+    .collapse {
+      padding: 0;
+
+      .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: $bg-header;
+    text-align: center;
+  }
+}
