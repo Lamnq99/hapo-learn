@@ -1,49 +1,54 @@
-@import "variable";
-
 .banner {
   width: 100%;
   margin: 0;
   position: relative;
   display: flex;
   align-items: center;
+
+  .img-banner {
+    width: 100%;
+  }
+
   .banner-contents {
     position: absolute;
-    left: 5%;
+    margin-left: 20px;
+
     .learn-any {
+      @include txt-learnAny-atHapo;
       font-size: 42px;
       font-weight: 400;
-      font-family: $font-Roboto;
-      color: $txt-bg-color;
       margin-bottom: 0;
     }
+
     .at-hapo {
+      @include txt-learnAny-atHapo;
       font-size: 42px;
       font-weight: 800;
-      font-family: $font-Roboto;
-      color: $txt-bg-color;
       margin: 0;
     }
+
     .method-study {
       color: $txt-color;
       font-size: 16px;
       font-family: $font-Roboto;
       margin: 20px 0;
     }
+
     .btn-start-learning {
       display: inline-block;
       background-color: $bg-color;
       padding: 15px 35px;
+      font-size: 16px;
       text-decoration: none;
       border-radius: 25px;
       box-shadow: $box-shadow;
-      // position: absolute;
     }
   }
 }
 
 .txt-start-learning {
   font-family: $font-Roboto;
-  font-weight: 500;
+  font-size: 14px;
   color: #fff;
   font-weight: 700;
 }
@@ -51,20 +56,22 @@
 @media only screen and (max-width: 768px) {
   .banner .banner-contents {
     .learn-any {
-      font-size: 24px;
+      font-size: 26px;
     }
+
     .at-hapo {
-      font-size: 24px;
+      font-size: 26px;
     }
+
     .method-study {
       font-size: 12px;
       margin: 10px 0;
+      font-size: 14px;
     }
+
     .btn-start-learning {
       padding: 10px 15px;
-      .txt-start-learning {
-        font-size: 12px;
-      }
+      font-size: 14px;
     }
   }
 }
@@ -72,29 +79,30 @@
 @media only screen and (max-width: 414px) {
   .banner {
     display: inline-block;
+
     .banner-contents {
       width: 100%;
       padding: 5% 10%;
+      margin: 0;
+
       .learn-any {
-        font-size: 25px;
+        font-size: 26px;
       }
+
       .at-hapo {
-        font-size: 25px;
+        font-size: 26px;
         margin: 0;
       }
-      .method-study {       
+
+      .method-study {
         font-size: 14px;
         margin: 10px 0;
       }
+
       .btn-start-learning {
-        margin-left: 2%;
+        margin-left: 6px;
         padding: 8px 70px;
-        
-        .txt-start-learning {
-          font-size: 12px;
-        }
-       
-    
+        font-size: 14px;
       }
     }
   }
