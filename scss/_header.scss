@@ -8,7 +8,8 @@
 }
 
 .navbar {
-  width: 90%;
+  width: 100%;
+  padding: 0 5%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -64,7 +65,7 @@
     .logo {
       display: flex;
       justify-content: center;
-      width: 60%;
+      width: 47%;
       text-align: center;
     }
   }
@@ -100,7 +101,7 @@
       position: relative;
       top: 0;
       padding: 0;
-      width: 65%;
+      width: 55%;
 
       .navbar-brand {
         padding: 0;
@@ -119,7 +120,8 @@
     top: 0;
     padding: 0;
     border: 0;
-    margin-top: 4%;
+    margin-top: 3.5%;
+    margin-left: 5%;
 
     .navbar-toggler-icon {
       font-size: small;
@@ -128,7 +130,9 @@
 
   .collapse {
     display: none;
-
+    z-index: 1;
+    width: 100%;
+    background-color: white;
     .navbar-nav {
       display: flex;
       flex-direction: column;

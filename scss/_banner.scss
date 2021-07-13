@@ -1,0 +1,99 @@
+@import "variable";
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .banner-contents {
+    position: absolute;
+    left: 5%;
+    .learn-any {
+      font-size: 42px;
+      font-weight: 400;
+      font-family: "Roboto", sans-serif;
+      color: $txt-bg-color;
+      margin-bottom: 0;
+    }
+    .at-hapo {
+      font-size: 42px;
+      font-weight: 800;
+      font-family: "Roboto", sans-serif;
+      color: $txt-bg-color;
+      margin: 0;
+    }
+    .method-study {
+      color: $txt-color;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      margin: 20px 0;
+    }
+    .btn-start-learning {
+      display: inline-block;
+      background-color: $bg-color;
+      padding: 15px 35px;
+      text-decoration: none;
+      border-radius: 25px;
+      box-shadow: $box-shadow;
+      // position: absolute;
+    }
+  }
+}
+
+.txt-start-learning {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .banner-contents {
+    .learn-any {
+      font-size: 24px;
+    }
+    .at-hapo {
+      font-size: 24px;
+    }
+    .method-study {
+      font-size: 12px;
+      margin: 10px 0;
+    }
+    .btn-start-learning {
+      padding: 10px 15px;
+      .txt-start-learning {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .banner {
+    display: inline-block;
+    .banner-contents {
+      width: 100%;
+      padding: 5% 10%;
+      .learn-any {
+        font-size: 25px;
+      }
+      .at-hapo {
+        font-size: 25px;
+        margin: 0;
+      }
+      .method-study {       
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      .btn-start-learning {
+        margin-left: 2%;
+        padding: 8px 70px;
+        
+        .txt-start-learning {
+          font-size: 12px;
+        }
+       
+    
+      }
+    }
+  }
+}
