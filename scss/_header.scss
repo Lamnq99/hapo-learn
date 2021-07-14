@@ -30,7 +30,6 @@
 
 .navbar-nav {
   align-items: center;
-  margin-top: 8px;
 
   .nav-item {
     padding: 0px 15px;
@@ -42,14 +41,11 @@
   }
 }
 
-.navbar-light .navbar-nav .active {
-  .nav-link {
-    font-family: $font-OpenS;
-    font-weight: 700;
-    color: $txt-color;
-    float: right;
-    text-transform: uppercase;
-  }
+.text-secondary {
+  font-family: $font-OpenS;
+  font-weight: 700;
+  color: $txt-color;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
@@ -58,6 +54,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
 
     .logo {
       display: flex;
@@ -112,12 +109,10 @@
   .navbar-toggler {
     display: flex;
     position: absolute;
-    left: 0;
-    top: 0;
-    padding: 0;
+    left: 20px;
+    top: 12px;
     border: 0;
-    margin-top: 13px;
-    margin-left: 20px;
+    padding: 0;
 
     .navbar-toggler-icon {
       font-size: 13px;
@@ -126,7 +121,6 @@
 
   .collapse {
     display: none;
-    z-index: 1;
     width: 100%;
     background-color: white;
 
