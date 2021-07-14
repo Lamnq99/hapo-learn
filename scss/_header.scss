@@ -41,15 +41,13 @@
   }
 }
 
-.navbar-light .navbar-nav .active {
-  .nav-link {
+  .text-secondary {
     font-family: $font-OpenS;
     font-weight: 700;
     color: $txt-color;
-    float: right;
     text-transform: uppercase;
   }
-}
+
 
 @media only screen and (max-width: 768px) {
   .navbar {
