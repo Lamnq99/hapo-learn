@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@mixin txt-learnAny-atHapo {
+    font-family: $font-Roboto;
+    color: $txt-bg-color;
+}
 
 $bg-color: #b2d235;
 $txt-color: #505353;
+$txt-bg-color: #11114e;
+$box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 $font-OpenS: "Open Sans", sans-serif;
+$font-Roboto: 'Roboto', sans-serif;

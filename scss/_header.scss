@@ -41,12 +41,12 @@
   }
 }
 
-.text-secondary {
-  font-family: $font-OpenS;
-  font-weight: 700;
-  color: $txt-color;
-  text-transform: uppercase;
-}
+  .text-secondary {
+    font-family: $font-OpenS;
+    font-weight: 700;
+    color: $txt-color;
+    text-transform: uppercase;
+  }
 
 @media only screen and (max-width: 768px) {
   .navbar {
