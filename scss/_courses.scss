@@ -83,18 +83,6 @@
   }
 }
 
-.container-title {
-  text-align: center;
-
-  .txt-container-title {
-    display: inline-block;
-    margin: 70px 0 56px 0;
-    font-size: 50px;
-    color: $txt-bg-color;
-    border-bottom: 5px $bg-color solid;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .courses {
     .row-courses {
