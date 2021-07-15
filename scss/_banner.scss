@@ -1,34 +1,34 @@
 .banner {
   width: 100%;
+  height: 655px;
   margin: 0;
   display: flex;
   align-items: center;
-
-  .img-banner {
-    width: 100%;
-  }
+  justify-content: center;
+  background-image: $banner;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   .banner-contents {
-    position: absolute;
-    margin-left: 20px;
+    width: 95%;
 
     .learn-any {
       @include txt-learnAny-atHapo;
-      font-size: 42px;
+      font-size: 46px;
       font-weight: 400;
       margin-bottom: 0;
     }
 
     .at-hapo {
       @include txt-learnAny-atHapo;
-      font-size: 42px;
+      font-size: 46px;
       font-weight: 800;
       margin: 0;
     }
 
     .method-study {
       color: $txt-color;
-      font-size: 16px;
+      font-size: 18px;
       font-family: $font-Roboto;
       margin: 20px 0;
     }
@@ -37,7 +37,6 @@
       display: inline-block;
       background-color: $bg-color;
       padding: 15px 35px;
-      font-size: 16px;
       text-decoration: none;
       border-radius: 25px;
       box-shadow: $box-shadow;
@@ -47,42 +46,52 @@
 
 .txt-start-learning {
   font-family: $font-Roboto;
-  font-size: 14px;
+  font-size: 18px;
   color: white;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  .banner .banner-contents {
-    .learn-any {
-      font-size: 26px;
-    }
+  .banner {
+    width: 100%;
+    height: 355px;
+    
+    .banner-contents {
+      .learn-any {
+        font-size: 26px;
+      }
 
-    .at-hapo {
-      font-size: 26px;
-    }
+      .at-hapo {
+        font-size: 26px;
+      }
 
-    .method-study {
-      font-size: 12px;
-      margin: 10px 0;
-      font-size: 14px;
-    }
+      .method-study {
+        font-size: 12px;
+        margin: 10px 0;
+        font-size: 14px;
+      }
 
-    .btn-start-learning {
-      padding: 10px 15px;
-      font-size: 14px;
+      .btn-start-learning {
+        padding: 10px 15px;
+        
+      }
     }
+  }
+
+  .txt-start-learning {
+    font-size: 14px; 
   }
 }
 
 @media only screen and (max-width: 414px) {
   .banner {
-    display: inline-block;
+    width: 100%;
+    height: 189px;
 
     .banner-contents {
-      width: 100%;
-      padding: 5% 10%;
-      margin: 0;
+      width: 80%;
+      position: absolute;
+      top: 280px;
 
       .learn-any {
         font-size: 26px;
@@ -90,19 +99,21 @@
 
       .at-hapo {
         font-size: 26px;
-        margin: 0;
       }
 
       .method-study {
         font-size: 14px;
-        margin: 10px 0;
+        margin: 6px 0;
       }
 
       .btn-start-learning {
-        margin-left: 35px;
-        padding: 5px 40px;
-        font-size: 14px;
+        padding: 10px 32px;
+        
       }
     }
+  }
+  .txt-start-learning {
+    font-size: 14px; 
+    font-weight: 500;
   }
 }
