@@ -1,16 +1,22 @@
 .banner {
-  width: 100%;
-  height: 655px;
+  padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: $banner;
-  background-size: contain;
-  background-repeat: no-repeat;
+
+  .bg-banner {
+    background-image: $banner;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   .banner-contents {
     width: 95%;
+    position: absolute;
 
     .learn-any {
       @include txt-learnAny-atHapo;
@@ -55,7 +61,11 @@
   .banner {
     width: 100%;
     height: 355px;
-    
+
+    .bg-banner {
+      height: 350px;
+    }
+
     .banner-contents {
       .learn-any {
         font-size: 26px;
@@ -73,25 +83,28 @@
 
       .btn-start-learning {
         padding: 10px 15px;
-        
       }
     }
   }
 
   .txt-start-learning {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .banner {
     width: 100%;
-    height: 189px;
+    height: 190px;
+
+    .bg-banner {
+      height: 190px;
+    }
 
     .banner-contents {
       width: 80%;
       position: absolute;
-      top: 280px;
+      top: 270px;
 
       .learn-any {
         font-size: 26px;
@@ -108,12 +121,12 @@
 
       .btn-start-learning {
         padding: 10px 32px;
-        
       }
     }
   }
+  
   .txt-start-learning {
-    font-size: 14px; 
+    font-size: 14px;
     font-weight: 500;
   }
 }
