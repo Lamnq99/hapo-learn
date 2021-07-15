@@ -99,7 +99,9 @@
 @media only screen and (max-width: 414px) {
   .header .navbar {
     padding: 0;
+    width: 100%;
   }
+
   .logo {
     .img-logo {
       width: 60%;
@@ -109,11 +111,20 @@
   .navbar-toggler {
     border: 0;
     position: absolute;
-    top: -44px;
+    top: -50px;
+    margin-left: 15px;
 
     .navbar-toggler-icon {
       width: 1em;
       height: 1em;
     }
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
   }
 }
