@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HapoLearn</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container-fluid">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="logo">
                 <a class="navbar-brand" href="#">
@@ -28,16 +29,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link text-secondary" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link text-secondary" href="#">All Courses</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link text-secondary" href="#">Login/Register</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link text-secondary" href="#">Profile</a>
                         </li>
                     </ul>
@@ -46,8 +47,8 @@
         </nav>
     </header>
 
-    <section class="banner">
-        <img src="./images/Hapo_Learn_banner1.png" class="img-banner" alt="banner" />
+    <section class="banner container-fluid">
+        <div class="bg-banner"></div>
         <div class="banner-contents">
             <p class="learn-any">Learn anytime, Anywhere</p>
             <p class="at-hapo">at HapoLearn !</p>
@@ -58,6 +59,55 @@
         </div>
     </section>
 
+    <div class="background-grey container-fluid"></div>
+    <section class="courses container-fluid">
+        <div class="row row-courses">
+            <div class="col-sm-4 col-courses">
+                <div class="card">
+                    <div class="bg-html">
+                        <img class="card-img-top img-html" src="./images/html.png" alt="php-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">HTML/CSS/js Tutorial</h4>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
+                            had coded quite a bit, but never touched anything in regards to web development.
+                        </p>
+                        <a href="#" class="btn btn-take-course">Take This Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-courses">
+                <div class="card">
+                    <div class="bg-laravel">
+                        <img class="card-img-top img-laravel" src="./images/laravel.png" alt="php-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">LARAVEL Tutorial</h4>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
+                            had coded quite a bit, but never touched anything in regards to web development.
+                        </p>
+                        <a href="#" class="btn btn-take-course">Take This Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-courses">
+                <div class="card">
+                    <div class="bg-php">
+                        <img class="card-img-top img-php" src="./images/php.png" alt="php-img">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">PHP Tutorial</h4>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
+                            had coded quite a bit, but never touched anything in regards to web development.
+                        </p>
+                        <a href="#" class="btn btn-take-course">Take This Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

@@ -1,0 +1,174 @@
+.background-grey {
+  padding-bottom: 150px;
+  background-image: linear-gradient(0deg, $bg-grey, white);
+}
+
+.courses {
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+
+  .row-courses {
+    width: 85%;
+    margin: 0;
+
+    .col-courses {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: $box-shadow;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.bg-html {
+  @include bg-html;
+
+  .img-html {
+    width: 90%;
+    padding: 21px;
+  }
+}
+
+.bg-laravel {
+  @include bg-laravel;
+
+  .img-laravel {
+    width: 78%;
+    padding: 17px;
+  }
+}
+
+.bg-php {
+  @include bg-php;
+
+  .img-php {
+    width: 90%;
+    padding: 21px;
+  }
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px;
+
+  .card-title {
+    font-family: $font-Roboto;
+    font-weight: 800;
+    color: $bg-color;
+    font-size: 23px;
+  }
+
+  .card-text {
+    font-family: $font-Roboto;
+    margin: 0;
+    font-size: 16px;
+    color: $txt-color;
+    margin-bottom: 0.5rem;
+    @include three-dot;
+  }
+
+  .btn-take-course {
+    background: $bg-color;
+    box-shadow: $box-shadow-btn;
+    border-radius: 22px;
+    font-size: 20px;
+    color: white;
+    font-family: $font-Roboto;
+  }
+}
+
+.container-title {
+  text-align: center;
+
+  .txt-container-title {
+    display: inline-block;
+    margin: 70px 0 56px 0;
+    font-size: 50px;
+    color: $txt-bg-color;
+    border-bottom: 5px $bg-color solid;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .courses {
+    .row-courses {
+      width: 100%;
+  
+      .col-courses {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 5px;
+
+    .card-title {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .card-text {
+      font-size: 13px;
+    }
+
+    .btn-take-course {
+      padding: 4px 12px;
+      font-size: 13px;
+    }
+  }
+
+  .card {
+    .bg-html {
+      @include bg-html;
+
+      .img-html {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+
+    .bg-laravel {
+      @include bg-laravel;
+
+      .img-laravel {
+        width: 78%;
+        padding: 20px;
+      }
+    }
+
+    .bg-php {
+      @include bg-php;
+
+      .img-php {
+        width: 80%;
+        padding: 8px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .background-grey {
+    width: 100%;
+    height: 280px;
+  }
+
+  .courses {
+    margin-top: -15%;
+  }
+
+  .card {
+    width: 70%;
+    margin-bottom: 30px;
+    padding-bottom: 4%;
+  }
+}
