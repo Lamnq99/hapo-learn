@@ -23,33 +23,36 @@
   border-radius: 15px;
   box-shadow: $box-shadow;
   width: 100%;
-  padding-bottom: 10px;
+  height: fit-content;
 }
 
 .bg-html {
-  @include bg-html;
+  background: $bg-html;
+  height: 200px;
+  @include bg-card;
 
   .img-html {
-    width: 90%;
-    padding: 21px;
+    width: 70%;
   }
 }
 
 .bg-laravel {
-  @include bg-laravel;
+  background: $bg-laravel;
+  height: 200px;
+  @include bg-card;
 
   .img-laravel {
-    width: 78%;
-    padding: 17px;
+    width: 70%;
   }
 }
 
 .bg-php {
-  @include bg-php;
+  background: $bg-php;
+  height: 200px;
+  @include bg-card;
 
   .img-php {
-    width: 90%;
-    padding: 21px;
+    width: 70%;
   }
 }
 
@@ -62,6 +65,7 @@
     font-weight: 800;
     color: $bg-color;
     font-size: 23px;
+    margin: 10px 0;
   }
 
   .card-text {
@@ -77,21 +81,11 @@
     background: $bg-color;
     box-shadow: $box-shadow-btn;
     border-radius: 22px;
+    width: 90%;
     font-size: 20px;
+    margin: 10px 0;
     color: white;
     font-family: $font-Roboto;
-  }
-}
-
-.container-title {
-  text-align: center;
-
-  .txt-container-title {
-    display: inline-block;
-    margin: 70px 0 56px 0;
-    font-size: 50px;
-    color: $txt-bg-color;
-    border-bottom: 5px $bg-color solid;
   }
 }
 
@@ -99,7 +93,7 @@
   .courses {
     .row-courses {
       width: 100%;
-  
+
       .col-courses {
         display: flex;
         justify-content: center;
@@ -125,34 +119,19 @@
     }
   }
 
-  .card {
-    .bg-html {
-      @include bg-html;
+  .bg-html {
+    height: 125px;
+    background-size: contain;
+  }
 
-      .img-html {
-        width: 90%;
-        padding: 20px;
-      }
-    }
+  .bg-laravel {
+    height: 125px;
+    background-size: contain;
+  }
 
-    .bg-laravel {
-      @include bg-laravel;
-
-      .img-laravel {
-        width: 78%;
-        padding: 20px;
-      }
-    }
-
-    .bg-php {
-      @include bg-php;
-
-      .img-php {
-        width: 80%;
-        padding: 8px;
-        margin-top: 20px;
-      }
-    }
+  .bg-php {
+    height: 125px;
+    background-size: contain;
   }
 }
 
@@ -168,7 +147,6 @@
 
   .card {
     width: 70%;
-    margin-bottom: 30px;
-    padding-bottom: 4%;
+    margin-bottom: 15px;
   }
 }
