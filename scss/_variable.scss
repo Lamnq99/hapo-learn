@@ -7,47 +7,19 @@ $banner: url("../images/hapo_learn_banner1.png");
   color: $txt-bg-color;
 }
 
-@mixin bg-courses {
-  text-align: center;
-  border-radius: 15px 15px 0 0;
-}
-
-@mixin bg-html {
-  background-color: $bg-html;
-  @include bg-courses;
-}
-
-@mixin bg-laravel {
-  background-color: $bg-laravel;
-  @include bg-courses;
-}
-
-@mixin bg-php {
-  background-color: $bg-php;
-  @include bg-courses;
-}
-
-@mixin bg-css {
-  background-color: $bg-css;
-  @include bg-courses;
-}
-
-@mixin bg-ruby {
-  background-color: $bg-ruby;
-  @include bg-courses;
-}
-
-@mixin bg-java {
-  background-color: $bg-java;
-  @include bg-courses;
-}
-
 @mixin three-dot {
   overflow: hidden;
   width: 100%;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+}
+
+@mixin bg-card {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
 $bg-color: #b2d235;
