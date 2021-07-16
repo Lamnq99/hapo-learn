@@ -28,23 +28,32 @@
 
 .bg-html {
   background: $bg-html;
-  background-image: url("../images/html.png");
   height: 200px;
   @include bg-card;
+
+  .img-html {
+    width: 70%;
+  }
 }
 
 .bg-laravel {
   background: $bg-laravel;
-  background-image: url("../images/laravel.png");
   height: 200px;
   @include bg-card;
+
+  .img-laravel {
+    width: 70%;
+  }
 }
 
 .bg-php {
   background: $bg-php;
-  background-image: url("../images/php.png");
   height: 200px;
   @include bg-card;
+
+  .img-php {
+    width: 70%;
+  }
 }
 
 .card-body {

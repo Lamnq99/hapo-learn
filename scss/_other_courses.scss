@@ -28,24 +28,32 @@
 
 .bg-css {
   background: $bg-css;
-  background-image: url("../images/css.png");
   height: 200px;
   @include bg-card;
+  
+  .img-css {
+    width: 70%;
+  }
 }
 
 .bg-ruby {
   background: $bg-ruby;
-  background-image: url("../images/rails.png");
   height: 200px;
-  background-size: contain;
   @include bg-card;
+
+  .img-ruby {
+    width: 70%;
+  }
 }
 
 .bg-java {
   background: $bg-java;
-  background-image: url("../images/java.png");
   height: 200px;
   @include bg-card;
+
+  .img-java {
+    width: 70%;
+  }
 }
 
 .all-courses {

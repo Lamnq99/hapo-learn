@@ -16,10 +16,10 @@ $banner: url("../images/hapo_learn_banner1.png");
 }
 
 @mixin bg-card {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
   border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 $bg-color: #b2d235;
