@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HapoLearn</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -15,44 +14,41 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container-fluid">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <div class="row row-nav">
-                <div class="col-lg-4 logo" style="background-color: none;">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/hapo_learn.png" class="d-inline-block align-top img-logo"
-                            alt="logo-hapo-learn">
-                    </a>
-                </div>
-                <div class="col-lg-8 btn-navbar" style="background-color: none;">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#">Home<span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#">All Courses</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#">Login/Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#">Profile</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Hapo_Learn.png" class="d-inline-block align-top img-logo" alt="logo-hapo-learn">
+                </a>
+            </div>
+            <div class="btn-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">All Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Login/Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Profile</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="banner">
+    <section class="banner container-fluid">
+        <div class="bg-banner"></div>
         <div class="banner-contents">
             <p class="learn-any">Learn anytime, Anywhere</p>
             <p class="at-hapo">at HapoLearn !</p>
@@ -63,8 +59,8 @@
         </div>
     </section>
 
-    <div class="background-grey"></div>
-    <section class="courses">
+    <div class="background-grey container-fluid"></div>
+    <section class="courses container-fluid">
         <div class="row row-courses">
             <div class="col-sm-4 col-courses">
                 <div class="card">
@@ -111,6 +107,7 @@
         </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

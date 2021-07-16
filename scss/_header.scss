@@ -1,34 +1,26 @@
 .header {
-  width: 100%;
-  margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: $bg-header;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .navbar {
-    width: 85%;
+    width: 90%;
     margin: 0;
     padding: 20px 0;
-
-    .row-nav {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
   }
 }
 
 .logo {
-  width: 100%;
+  width: 35%;
   padding: 0;
 
   .navbar-brand {
     display: flex;
     justify-content: center;
+    padding: 0;
+    width: 100%;
   }
 
   .img-logo {
@@ -37,7 +29,7 @@
 }
 
 .btn-navbar {
-  width: 100%;
+  width: 65%;
   padding: 0;
   display: flex;
 
@@ -67,28 +59,27 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .logo {
-    width: 100%;
-    padding: 10px 0;
-
-    .navbar-brand {
-      padding: 0;
+  .header {
+    .navbar {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+  }
 
-    .img-logo {
-      width: 50%;
-    }
+  .logo {
+    width: 45%;
   }
 
   .btn-navbar {
     width: 100%;
-    padding: 0;
-    display: flex;
 
     .collapse {
+      padding: 10px 0;
+
       .navbar-nav {
-        width: 100%;
         display: flex;
         justify-content: center;
       }
@@ -97,26 +88,47 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .header .navbar {
-    padding: 0;
-    width: 100%;
-  }
-
-  .logo {
-    .img-logo {
-      width: 60%;
+  .header {
+    .navbar {
+      padding: 10px 0;
     }
   }
 
-  .navbar-toggler {
-    border: 0;
-    position: absolute;
-    top: -50px;
-    margin-left: 15px;
+  .logo {
+    width: 50%;
 
-    .navbar-toggler-icon {
-      width: 1em;
-      height: 1em;
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+    }
+
+    .img-logo {
+      width: 100%;
+    }
+  }
+
+  .btn-navbar {
+    .navbar-toggler {
+      border: 0;
+      position: absolute;
+      top: 15px;
+
+      .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+      }
+    }
+    
+    .collapse {
+      padding: 0;
+      
+      .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   }
 
@@ -124,7 +136,7 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    background-color: #f8f9fa;
+    background: $bg-header;
     text-align: center;
   }
 }
