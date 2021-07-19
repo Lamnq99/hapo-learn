@@ -1,0 +1,31 @@
+.feedback {
+  height: 600px;
+  margin-top: 1em;
+
+  .row-feedback-title .feedback-title {
+    font-size: 60px;
+    color: $txt-bg-color;
+    font-weight: 800;
+    font-family: $font-OpenS;
+    border-bottom: 5px $bg-color solid;
+  }
+
+  .row-feedback-sub {
+    width: 100%;
+    text-align: center;
+
+    .feedback-sub {
+      width: 100%;
+      width: 42%;
+      color: $txt-color;
+    }
+  }
+}
+
+.row-feedback {
+  margin: 0;
+
+  .col-feedback{
+    
+  }
+}
