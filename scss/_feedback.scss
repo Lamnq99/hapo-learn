@@ -74,6 +74,10 @@
   width: 20%;
 }
 
+.icon-next-main {
+  display: none;
+}
+
 .user-feedback {
   margin: 30px 0;
 
@@ -86,14 +90,6 @@
     .checked {
       color: orange;
     }
-  }
-}
-
-.icon-next {
-  width: 20%;
-  
-  .icon-next-main {
-    display: none;
   }
 }
 
@@ -142,10 +138,6 @@
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 20px solid $color-feedback;
-  }
-
-  .icon-next {
-    width: 20%;
   }
 
   .user-feedback {
