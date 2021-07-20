@@ -1,31 +1,232 @@
 .feedback {
-  height: 600px;
-  margin-top: 1em;
+  margin: 4em auto;
 
-  .row-feedback-title .feedback-title {
-    font-size: 60px;
-    color: $txt-bg-color;
-    font-weight: 800;
-    font-family: $font-OpenS;
-    border-bottom: 5px $bg-color solid;
+  .row-feedback-title {
+    justify-content: center;
+
+    .feedback-title {
+      font-size: 60px;
+      color: $txt-bg-color;
+      font-weight: 800;
+      font-family: $font-OpenS;
+      border-bottom: 5px $bg-color solid;
+    }
   }
 
   .row-feedback-sub {
     width: 100%;
+    justify-content: center;
     text-align: center;
 
     .feedback-sub {
-      width: 100%;
       width: 42%;
       color: $txt-color;
+      margin: 15px 0;
     }
   }
 }
 
 .row-feedback {
-  margin: 0;
+  display: flex;
+  justify-content: center;
 
-  .col-feedback{
-    
+  .col-feedback {
+    padding: 0;
+    margin: 10px;
+
+    .feedback-content-con {
+      padding: 0 40px;
+      border: 1px solid $color-feedback;
+      border-radius: 15px;
+      margin: 0;
+    }
+  }
+}
+
+.icon-prev-slide {
+  position: absolute;
+  left: -37em;
+  top: 58px;
+}
+
+.feedback-content {
+  color: $txt-color;
+  border-left: 2px $color-feedback solid;
+  padding-left: 15px;
+  margin: 30px 0;
+}
+
+.icon-next-slide {
+  position: absolute;
+  right: -10px;
+  top: 60px;
+}
+
+.triangle-down {
+  position: absolute;
+  margin-top: 8.25em;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid $color-feedback;
+}
+
+.icon-next {
+  width: 20%;
+}
+
+.user-feedback {
+  margin: 30px 0;
+
+  .col-info-user {
+    .user-name-feedback,
+    .course-name-feedback {
+      margin: 0;
+    }
+
+    .checked {
+      color: orange;
+    }
+  }
+}
+
+.icon-next {
+  width: 20%;
+  
+  .icon-next-main {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .feedback .row-feedback-sub .feedback-sub {
+    width: 64%;
+  }
+
+  .row-feedback {
+    display: flex;
+    justify-content: center;
+
+    .col-feedback {
+      padding: 0;
+      margin: 10px;
+
+      .feedback-content-con {
+        padding: 0 40px;
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+
+  .icon-prev-slide {
+    left: 66px;
+    top: 60px;
+  }
+
+  .feedback-content {
+    color: $txt-color;
+    border-left: 2px $color-feedback solid;
+    padding-left: 15px;
+    margin: 30px 0;
+  }
+
+  .icon-next-slide {
+    position: absolute;
+    right: 67px;
+    top: 60px;
+  }
+
+  .triangle-down {
+    position: absolute;
+    margin-top: 8.25em;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid $color-feedback;
+  }
+
+  .icon-next {
+    width: 20%;
+  }
+
+  .user-feedback {
+    .col-ava-user {
+      margin-left: 6em;
+    }
+
+    .col-info-user {
+      .user-name-feedback,
+      .course-name-feedback {
+        margin: 0;
+      }
+
+      .checked {
+        color: orange;
+      }
+    }
+  }
+
+  .col-feedback-left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .feedback {
+    margin-top: 2em;
+
+    .row-feedback-title {
+      .feedback-title {
+        font-size: 35px;
+      }
+    }
+
+    .row-feedback-sub {
+      margin: 0;
+
+      .feedback-sub {
+        width: 80%;
+      }
+    }
+  }
+
+  .row-feedback .col-feedback {
+    .feedback-content-con {
+      padding: 10px 15px;
+    }
+  }
+
+  .icon-prev-slide {
+    position: absolute;
+    left: 30px;
+    top: 90px;
+  }
+
+  .feedback-content {
+    margin: 15px 0;
+  }
+
+  .icon-next-slide {
+    position: absolute;
+    right: 30px;
+    top: 90px;
+  }
+
+  .triangle-down {
+    margin-top: 11.5em;
+    margin-left: 0.5em;
+  }
+
+  .user-feedback {
+    .col-ava-user {
+      margin-left: 3em;
+    }
+
+    .col-info-user {
+      margin-left: 10px;
+    }
+  }
+
+  .col-feedback-left {
+    display: none;
   }
 }
