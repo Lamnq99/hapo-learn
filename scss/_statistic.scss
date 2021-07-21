@@ -1,0 +1,61 @@
+.statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 0;
+
+  .row-statistic-title {
+    .statistic-title {
+      font-size: 50px;
+      font-weight: 800;
+      font-family: $font-OpenS;
+      color: $txt-bg-color;
+      border-bottom: 5px $bg-color solid;
+    }
+  }
+
+  .row-statistic-index {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+.col-statistic-index {
+  .statistic-courses {
+    font-size: 45px;
+    color: $txt-color;
+    font-family: $font-OpenS;
+  }
+
+  .statistic-index {
+    font-size: 45px;
+    color: $bg-color;
+    font-family: $font-OpenS;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .statistic .row-statistic-index {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .statistic {
+    padding: 3em 0;
+
+    .row-statistic-title {
+      .statistic-title {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+.col-statistic-index {
+  .statistic-courses,
+  .statistic-index {
+    font-size: 40px;
+  }
+}
