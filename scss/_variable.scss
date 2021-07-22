@@ -22,13 +22,6 @@ $banner: url("../images/hapo_learn_banner1.png");
   align-items: center;
 }
 
-@mixin link-footer {
-  font-family: $font-Roboto;
-  display: none;
-  font-size: 15px;
-  font-weight: 400;
-}
-
 $bg-color: #b2d235;
 $txt-color: #505353;
 $txt-bg-color: #11114e;
