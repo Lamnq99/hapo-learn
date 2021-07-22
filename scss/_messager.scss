@@ -1,0 +1,128 @@
+.messenger {
+  position: fixed;
+  background-image: url("../images/bg_messenger.png");
+  right: 20px;
+  top: 32em;
+  padding: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.messenger-box {
+  position: fixed;
+  right: 22px;
+  top: 14em;
+  width: 30%;
+  height: 270px;
+  background-color: white;
+  box-shadow: 0px 0px 8px $color-feedback;
+  border-radius: 20px;
+  display: none;
+  font-family: $font-OpenS;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.txt-name {
+  margin: 1rem 0 0 4.5rem;
+  color: $color-feedback;
+}
+
+.main-chat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .ava-owl {
+    margin-left: 1rem;
+  }
+
+  .txt-chat {
+    margin: 0 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    background: $bg-chat;
+    color: $txt-color;
+    font-weight: 600;
+  }
+}
+
+.login-messenger {
+  background-color: $mess-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: $font-OpenS;
+  margin: 0 50px;
+  padding: 5px 0;
+  cursor: pointer;
+
+  img {
+    width: 10%;
+    margin: 0 10px;
+  }
+
+  .txt-login {
+    margin: 0;
+    color: white;
+  }
+}
+
+.chat-with-hapo {
+  color: $color-feedback;
+  font-family: $font-OpenS;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .messenger {
+    bottom: 15em;
+    top: unset;
+  }
+
+  .messenger-box {
+    width: 50%;
+    top: unset;
+    bottom: 20em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .messenger {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    bottom: 10em;
+  }
+  .messenger-box {
+    width: 65%;
+    height: 215px;
+    bottom: 13em;
+  }
+
+  .txt-name {
+    font-size: 13px;
+  }
+  .main-chat {
+    .txt-chat {
+      padding: 0;
+      font-size: 13px;
+    }
+  }
+
+  .login-messenger {
+    margin: 0 10px;
+
+    .txt-login {
+      font-size: 13px;
+    }
+  }
+
+  .chat-with-hapo {
+    font-size: 13px;
+  }
+}
