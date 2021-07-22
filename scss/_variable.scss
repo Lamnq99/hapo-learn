@@ -22,6 +22,13 @@ $banner: url("../images/hapo_learn_banner1.png");
   align-items: center;
 }
 
+@mixin link-footer {
+  font-family: $font-Roboto;
+  display: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 $bg-color: #b2d235;
 $txt-color: #505353;
 $txt-bg-color: #11114e;
@@ -39,3 +46,4 @@ $bg-header: #f8f9fa;
 $bg-grey: #e5e5e5;
 $color-feedback: #707575;
 $color-shadow-member: #e3e7e7;
+$color-footer: #454545;
