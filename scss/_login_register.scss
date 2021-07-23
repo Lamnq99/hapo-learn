@@ -1,0 +1,192 @@
+.modal-header {
+  padding: 0;
+}
+
+.tabs-login-register {
+  width: 100%;
+
+  .nav-item {
+    width: 50%;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+
+    a {
+      color: $bg-color;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: $font-Roboto;
+      font-size: 17px;
+      padding: 10px 0;
+    }
+  }
+}
+
+.btn-close {
+  margin: 0;
+  padding: 0px;
+  color: $bg-color;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  z-index: 1;
+  opacity: 1;
+  color: $bg-color;
+  text-shadow: none;
+
+  .fas {
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: $bg-color;
+}
+
+.tab-content {
+  width: 98%;
+  margin: auto;
+
+  .tab-pane {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+}
+
+.form-login,
+.form-register {
+  font-family: $font-Roboto;
+
+  .label-username,
+  .label-password,
+  .label-email,
+  .label-repassword {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .txt-username,
+  .txt-password,
+  .txt-email,
+  .txt-repassword {
+    width: 100%;
+    padding: 5px 0;
+  }
+}
+
+.option-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+
+  .forgot-pass {
+    color: $bg-color;
+  }
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: -1px;
+  border: 1px solid $color-feedback;
+  background-color: white;
+}
+
+input[type="checkbox"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: -1px;
+  background-color: $bg-color;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.btn-login,
+.btn-register {
+  text-transform: uppercase;
+  color: white;
+  padding: 7px 20px;
+  margin: 20px auto;
+  background-color: $bg-color;
+  box-shadow: $box-shadow-btn;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.login-with {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+
+  p {
+    margin: 0;
+    font-size: 20px;
+    font-family: $font-Roboto;
+    color: $color-footer;
+  }
+}
+
+.login-with::before,
+.login-with::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid $color-feedback;
+}
+
+.login-with::before {
+  margin-right: 0.25em;
+}
+
+.login-with::after {
+  margin-left: 00.25em;
+}
+
+.with-gg,
+.with-face {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+
+  .icon-gg,
+  .icon-face {
+    padding: 10px;
+  }
+}
+
+.with-gg {
+  background-color: $gg-color;
+}
+
+.with-face {
+  background-color: $face-color;
+}

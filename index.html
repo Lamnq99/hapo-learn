@@ -36,7 +36,8 @@
                             <a class="nav-link text-secondary" href="#">All Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">Login/Register</a>
+                            <a class="nav-link text-secondary" href="#" data-toggle="modal"
+                                data-target="#myModal">Login/Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-secondary" href="#">Profile</a>
@@ -406,6 +407,66 @@
                 <p class="txt-login">Đăng nhập bằng messenger</p>
             </div>
             <p class="chat-with-hapo">Chat với HapoLearn trong Messenger</p>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs tabs-login-register" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#login">login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#register">register</a>
+                        </li>
+                    </ul>
+                    <button class="close btn-close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <div id="login" class="container tab-pane active">
+                        <form class="form-login" action="" method="post" onsubmit="return false">
+                            <label class="label-username">Username:</label>
+                            <input class="txt-username" type="text"><br><br>
+                            <label class="label-password">Password:</label>
+                            <input class="txt-password" type="text">
+                            <div class="option-login">
+                                <div class=" form-check box-remember">
+                                    <input class="form-check-input" type="checkbox" value="true" id="remember-me">
+                                    <label class="form-check-label" for="remember-me">Remember me
+                                </div>
+                                <a href="#" onclick="return false" class="forgot-pass">Forgot password</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="return false" class="btn-login">login</a>
+                            </div>
+                        </form>
+                        <div class="login-with">
+                            <p>Login with</p>
+                        </div>
+                        <p class="with-gg"><i class="fab fa-google-plus-g fa-lg icon-gg"></i>Google</p>
+                        <p class="with-face"><i class="fab fa-facebook-f fa-lg icon-face"></i></i>Google</p>
+                    </div>
+                    <div id="register" class="container tab-pane">
+                        <form class="form-register" action="" method="post" onsubmit="return false">
+                            <label class="label-username">Username:</label>
+                            <input class="txt-username" type="text"><br><br>
+                            <label class="label-email">Email:</label>
+                            <input class="txt-email" type="text"><br><br>
+                            <label class="label-password">Password:</label>
+                            <input class="txt-password" type="text"><br><br>
+                            <label class="label-repassword">Repeat Password:</label>
+                            <input class="txt-repassword" type="text">
+                            <div>
+                                <a href="#" onclick="return false" class="btn-register">register</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
