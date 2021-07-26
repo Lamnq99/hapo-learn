@@ -88,11 +88,11 @@
   }
 }
 
-.remember-me-checkbox[type="checkbox"] {
+.remember-me-checkbox {
   cursor: pointer;
 }
 
-.remember-me-checkbox[type="checkbox"]:before {
+.remember-me-checkbox:before {
   content: "";
   display: block;
   position: absolute;
@@ -104,7 +104,7 @@
   background-color: white;
 }
 
-.remember-me-checkbox[type="checkbox"]:checked:before {
+.remember-me-checkbox:checked:before {
   content: "";
   display: block;
   position: absolute;
@@ -115,7 +115,7 @@
   background-color: $bg-color;
 }
 
-.remember-me-checkbox[type="checkbox"]:checked:after {
+.remember-me-checkbox:checked:after {
   content: "";
   display: block;
   width: 4px;
