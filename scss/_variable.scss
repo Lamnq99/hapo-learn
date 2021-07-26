@@ -2,16 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $banner: url("../images/hapo_learn_banner1.png");
 
+@font-face {
+  font-family: "utm_bryantlgregular";
+  src: url(../assets/font/utm_bryantlg-webfont.woff2) format("woff2"),
+    url(../assets/fonts/utm_bryantlg-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @mixin txt-learnAny-atHapo {
-  font-family: $font-Roboto;
+  font-family: $font_UTM_BryantLG;
   color: $txt-bg-color;
+  text-decoration: none;
 }
 
 @mixin three-dot {
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
@@ -22,11 +32,14 @@ $banner: url("../images/hapo_learn_banner1.png");
   align-items: center;
 }
 
+$font_UTM_BryantLG: "utm_bryantlgregular";
 $bg-color: #b2d235;
 $txt-color: #505353;
 $txt-bg-color: #11114e;
 $box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+$border-take-courses: 0.3px solid #D2D235;
 $box-shadow-btn: inset 0px 1.5px 2px #6f8710;
+$text-shadow-btn: 1px 1px #6f8710;
 $font-OpenS: "Open Sans", sans-serif;
 $font-Roboto: "Roboto", sans-serif;
 $bg-html: #3f6185;
@@ -40,7 +53,7 @@ $bg-grey: #e5e5e5;
 $color-feedback: #707575;
 $color-shadow-member: #e3e7e7;
 $color-footer: #454545;
-$bg-chat: #F1F0F0;
-$mess-color: #3184F7;
-$gg-color: #DC4E41;
-$face-color: #3B5999;
+$bg-chat: #f1f0f0;
+$mess-color: #3184f7;
+$gg-color: #dc4e41;
+$face-color: #3b5999;

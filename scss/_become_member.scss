@@ -14,11 +14,12 @@
     text-align: center;
 
     .become-member-content {
-      font-size: 50px;
-      font-weight: 800;
-      font-family: $font-OpenS;
+      font-size: 62px;
+      font-weight: 900;
+      font-family: $font_UTM_BryantLG;
       color: white;
-      width: 50%;
+      text-shadow: 1px 0 white;
+      width: 48%;
     }
   }
 }
@@ -29,12 +30,15 @@
   .btn-start-learning {
     padding: 10px 20px;
     background-color: white;
+    font-family: $font_UTM_BryantLG;
     color: $bg-color;
     text-decoration: none;
     border-radius: 20px;
     box-shadow: inset 0px 4px 4px $color-shadow-member;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 900;
+    text-shadow: $text-shadow-btn;
+    font-size: 35px;
 
     &:hover {
       text-decoration: none;
@@ -48,7 +52,8 @@
     padding: 6em 0;
 
     .become-member-main .become-member-content {
-      width: 80%;
+      width: 70%;
+      font-size: 45px;
     }
   }
 }
@@ -63,7 +68,7 @@
     }
 
     .btn-mem .btn-start-learning {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
 }

@@ -5,11 +5,12 @@
     justify-content: center;
 
     .feedback-title {
-      font-size: 60px;
+      font-size: 80px;
       color: $txt-bg-color;
-      font-weight: 800;
-      font-family: $font-OpenS;
+      font-weight: 900;
+      font-family: $font_UTM_BryantLG;
       border-bottom: 5px $bg-color solid;
+      text-shadow: 1px 0 $txt-bg-color;
     }
   }
 
@@ -19,34 +20,54 @@
     text-align: center;
 
     .feedback-sub {
-      width: 42%;
+      width: 53%;
       color: $txt-color;
       margin: 15px 0;
+      font-family: $font_UTM_BryantLG;
+      font-size: 35px;
+      font-weight: 600;
     }
   }
+}
+
+.slide-feedback-con {
+  width: 100%;
+
+  .carousel-inner {
+    width: 85%;
+    margin: auto;
+    display: flex;
+
+    .carousel-item {
+      width: 100%;
+    }
+  }
+}
+
+.icon-feedback {
+  margin-top: 3.5em;
+  font-weight: unset;
 }
 
 .row-feedback {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
 
   .col-feedback {
     padding: 0;
-    margin: 10px;
+    width: 47%;
 
     .feedback-content-con {
+      width: 100%;
       padding: 0 40px;
       border: 1px solid $color-feedback;
+      font-family: $font_UTM_BryantLG;
       border-radius: 15px;
       margin: 0;
+      font-weight: 600;
     }
   }
-}
-
-.icon-prev-slide {
-  position: absolute;
-  left: -37em;
-  top: 58px;
 }
 
 .feedback-content {
@@ -54,40 +75,36 @@
   border-left: 2px $color-feedback solid;
   padding-left: 15px;
   margin: 30px 0;
+  font-size: 30px;
 }
 
 .feedback-content-con:after,
 .feedback-content-con:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50px;
-    top: 133px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 133px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
 
-  .feedback-content-con:after {
-    bottom: -21px;
-    border-color: white transparent transparent transparent;
-    border-width: 11px;
-  }
+.feedback-content-con:after {
+  bottom: -21px;
+  border-color: white transparent transparent transparent;
+  border-width: 11px;
+}
 
-  .feedback-content-con:before {
-    bottom: -22px;
-    border-color: $color-feedback transparent transparent transparent;
-    border-width: 11px;
-  }
+.feedback-content-con:before {
+  bottom: -22px;
+  border-color: $color-feedback transparent transparent transparent;
+  border-width: 11px;
+}
 
 .icon-next {
   width: 20%;
-  height: 50%;
-  width: 13%;
-
-  .icon-next-main {
-    color: black;
-  }
+  height: 100%;
 }
 
 .user-feedback {
@@ -113,8 +130,20 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .feedback .row-feedback-sub .feedback-sub {
-    width: 64%;
+  .feedback {
+    .row-feedback-title {
+      .feedback-title {
+        font-size: 45px;
+      }
+    }
+
+    .row-feedback-sub {
+      .feedback-sub {
+        width: 85%;
+        margin: 15px 0 25px 0;
+        font-size: 22px;
+      }
+    }
   }
 
   .row-feedback {
@@ -123,19 +152,15 @@
 
     .col-feedback {
       padding: 0;
-      margin: 10px;
+      margin: 0;
+      width: 100%;
 
       .feedback-content-con {
         padding: 0 40px;
-        width: 80%;
-        margin: auto;
+        width: 100%;
+        margin: 0;
       }
     }
-  }
-
-  .icon-prev-slide {
-    left: 66px;
-    top: 60px;
   }
 
   .feedback-content {
@@ -149,6 +174,11 @@
   .feedback-content:before {
     left: 130px;
     top: 133px;
+  }
+
+  .icon-feedback {
+    margin-top: 4.5em;
+    z-index: 1;
   }
 
   .user-feedback {
@@ -175,52 +205,78 @@
 
 @media only screen and (max-width: 424px) {
   .feedback {
-    margin-top: 2em;
-
+    margin: 2em auto;
     .row-feedback-title {
       .feedback-title {
-        font-size: 35px;
+        font-size: 38px;
       }
     }
 
     .row-feedback-sub {
-      margin: 0;
-
       .feedback-sub {
-        width: 80%;
+        width: 95%;
+        margin: 0 0 25px 0;
+        font-size: 18px;
+      }
+    }
+
+    .slide-feedback-con {
+      .carousel-inner {
+        width: 100%;
       }
     }
   }
 
-  .row-feedback .col-feedback {
-    .feedback-content-con {
-      padding: 10px 15px;
-    }
-  }
+  .row-feedback {
+    display: flex;
+    justify-content: center;
 
-  .icon-prev-slide {
-    position: absolute;
-    left: 30px;
-    top: 90px;
+    .col-feedback {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+
+      .feedback-content-con {
+        padding: 0 15px;
+      }
+    }
   }
 
   .feedback-content {
-    margin: 15px 0;
+    color: $txt-color;
+    border-left: 2px $color-feedback solid;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-size: 14px;
   }
 
-  .feedback-content:after, 
+  .feedback-content:after,
   .feedback-content:before {
-    left: 81px;
-    top: 195px;
-}
+    left: 130px;
+    top: 133px;
+  }
+
+  .icon-feedback {
+    margin-top: 2.6em;
+    font-size: 1.3em;
+    z-index: 1;
+  }
 
   .user-feedback {
     .col-ava-user {
-      margin-left: 3em;
+      margin-left: 1em;
+      margin-right: 1em;
     }
 
     .col-info-user {
-      margin-left: 10px;
+      .user-name-feedback,
+      .course-name-feedback {
+        margin: 0;
+      }
+
+      .checked {
+        color: orange;
+      }
     }
   }
 

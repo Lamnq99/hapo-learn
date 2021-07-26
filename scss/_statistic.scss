@@ -7,11 +7,12 @@
 
   .row-statistic-title {
     .statistic-title {
-      font-size: 50px;
+      font-size: 80px;
       font-weight: 800;
-      font-family: $font-OpenS;
+      font-family: $font_UTM_BryantLG;
       color: $txt-bg-color;
       border-bottom: 5px $bg-color solid;
+      text-shadow: 1px 0 $txt-bg-color;
     }
   }
 
@@ -23,21 +24,36 @@
 
 .col-statistic-index {
   .statistic-courses {
-    font-size: 45px;
+    font-size: 60px;
+    font-weight: 600;
     color: $txt-color;
-    font-family: $font-OpenS;
+    font-family: $font_UTM_BryantLG;
   }
 
   .statistic-index {
-    font-size: 45px;
     color: $bg-color;
-    font-family: $font-OpenS;
+    font-family: $font_UTM_BryantLG;
+    font-size: 60px;
+    font-weight: 600;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .statistic .row-statistic-index {
-    width: 100%;
+  .statistic {
+    padding: 3em 0;
+
+    .row-statistic-title {
+      .statistic-title {
+        font-size: 45px;
+      }
+    }
+  }
+
+  .col-statistic-index {
+    .statistic-courses,
+    .statistic-index {
+      font-size: 40px;
+    }
   }
 }
 
@@ -51,11 +67,11 @@
       }
     }
   }
-}
 
-.col-statistic-index {
-  .statistic-courses,
-  .statistic-index {
-    font-size: 40px;
+  .col-statistic-index {
+    .statistic-courses,
+    .statistic-index {
+      font-size: 40px;
+    }
   }
 }

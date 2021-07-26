@@ -8,15 +8,18 @@
 
     .txt-container-title {
       display: inline-block;
-      margin: 70px 0 56px 0;
-      font-size: 50px;
+      margin: 100px 0 60px 0;
+      font-size: 80px;
+      text-shadow: 1px 0 $txt-bg-color;
+      font-weight: 900;
       color: $txt-bg-color;
       border-bottom: 5px $bg-color solid;
+      font-family: $font_UTM_BryantLG;
     }
   }
 
   .row-other-courses {
-    width: 85%;
+    width: 90%;
     margin: 0 0 30px 0;
 
     .col-courses {
@@ -28,9 +31,9 @@
 
 .bg-css {
   background: $bg-css;
-  height: 200px;
+  height: 250px;
   @include bg-card;
-  
+
   .img-css {
     width: 70%;
   }
@@ -38,7 +41,7 @@
 
 .bg-ruby {
   background: $bg-ruby;
-  height: 200px;
+  height: 250px;
   @include bg-card;
 
   .img-ruby {
@@ -48,7 +51,7 @@
 
 .bg-java {
   background: $bg-java;
-  height: 200px;
+  height: 250px;
   @include bg-card;
 
   .img-java {
@@ -71,6 +74,7 @@
     .container-title {
       .txt-container-title {
         margin: 55px 0 40px 0;
+        font-size: 45px;
       }
     }
 
@@ -111,8 +115,8 @@
   .other-courses {
     .container-title {
       .txt-container-title {
-        margin: 10px 0 15px 0;
-        font-size: 35px;
+        margin: 25px 0 20px 0;
+        font-size: 38px;
       }
     }
 
