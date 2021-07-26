@@ -73,31 +73,34 @@
     border-color: white transparent transparent transparent;
     border-width: 11px;
   }
-  
+
   .feedback-content-con:before {
     bottom: -22px;
     border-color: $color-feedback transparent transparent transparent;
     border-width: 11px;
   }
 
-.icon-next-slide {
-  position: absolute;
-  right: -10px;
-  top: 60px;
-}
-
 .icon-next {
   width: 20%;
-}
+  height: 50%;
+  width: 13%;
 
-.icon-next-main {
-  display: none;
+  .icon-next-main {
+    color: black;
+  }
 }
 
 .user-feedback {
   margin: 30px 0;
 
+  .col-ava-user {
+    text-align: center;
+    padding: 0;
+  }
+
   .col-info-user {
+    padding: 0;
+
     .user-name-feedback,
     .course-name-feedback {
       margin: 0;
@@ -146,12 +149,6 @@
   .feedback-content:before {
     left: 130px;
     top: 133px;
-  }
-
-  .icon-next-slide {
-    position: absolute;
-    right: 67px;
-    top: 60px;
   }
 
   .user-feedback {
@@ -216,12 +213,6 @@
     left: 81px;
     top: 195px;
 }
-
-  .icon-next-slide {
-    position: absolute;
-    right: 30px;
-    top: 90px;
-  }
 
   .user-feedback {
     .col-ava-user {
