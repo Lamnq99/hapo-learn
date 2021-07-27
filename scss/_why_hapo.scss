@@ -2,6 +2,8 @@
   width: 100%;
   padding: 0;
   margin-top: 130px;
+  background-image: url("../images/bg_why_hapo.png");
+  background-size: cover;
 }
 
 .container-laptop {
@@ -10,18 +12,15 @@
   .img-laptop {
     position: absolute;
     left: 0;
-    bottom: -16em;
+    bottom: -15em;
+    width: 22%;
   }
 }
 
 .row-why-hapo {
-  height: 750px;
-  background-image: url("../images/bg_why_hapo.png");
-  background-size: cover;
-  margin-top: 100px;
+  height: 685px;
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  max-width: 85%;
 
   .col-left {
     display: flex;
@@ -29,10 +28,10 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 7em;
-    width: 50%;
+    width: 47%;
 
     .txt-why-hapo {
-      font-size: 85px;
+      font-size: 71px;
       font-weight: 600;
       color: white;
       text-shadow: 1px 1px white;
@@ -42,18 +41,19 @@
 
     .txt-content {
       color: white;
-      font-size: 26px;
+      font-size: 21px;
       font-family: $font_UTM_BryantLG;
     }
   }
 
   .col-right {
-    width: 50%;
-    text-align: left;
+    width: 53%;
+    display: flex;
+    align-items: center;
 
     .img-computer {
-      width: 95%;
-      margin-top: 6em;
+      width: 100%;
+      margin-top: 4em;
     }
   }
 }
@@ -65,8 +65,8 @@
     .img-laptop {
       position: absolute;
       left: 0;
-      bottom: -13em;
-      width: 30%;
+      bottom: -12em;
+      width: 28%;
       z-index: 1;
     }
   }
@@ -76,14 +76,14 @@
     background-image: url("../images/bg_why_hapo.png");
     margin-top: 100px;
     position: relative;
+    max-width: 100%;
 
     .col-left {
-      width: 60%;
-      justify-content: flex-end;
-      margin-bottom: 1em;
+      width: 55%;
+      margin-bottom: 3em;
 
       .txt-why-hapo {
-        font-size: 54px;
+        font-size: 50px;
         color: white;
         position: absolute;
         bottom: 5.5em;
@@ -93,12 +93,12 @@
 
       .txt-content {
         color: white;
-        font-size: 17px;
+        font-size: 14px;
       }
     }
 
     .col-right {
-      width: 40%;
+      width: 45%;
 
       .img-computer {
         width: 100%;
@@ -131,7 +131,7 @@
       align-items: center;
 
       .txt-why-hapo {
-        font-size: 45px;
+        font-size: 40px;
         width: 54%;
         margin-bottom: 30px;
         position: unset;

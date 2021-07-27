@@ -1,8 +1,5 @@
 .other-courses {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  padding: 0;
   .container-title {
     text-align: center;
 
@@ -19,19 +16,16 @@
   }
 
   .row-other-courses {
-    width: 90%;
     margin: 0 0 30px 0;
 
     .col-courses {
-      display: flex;
-      justify-content: center;
     }
   }
 }
 
 .bg-css {
   background: $bg-css;
-  height: 250px;
+  height: 200px;
   @include bg-card;
 
   .img-css {
@@ -41,7 +35,7 @@
 
 .bg-ruby {
   background: $bg-ruby;
-  height: 250px;
+  height: 200px;
   @include bg-card;
 
   .img-ruby {
@@ -51,7 +45,7 @@
 
 .bg-java {
   background: $bg-java;
-  height: 250px;
+  height: 200px;
   @include bg-card;
 
   .img-java {
@@ -65,8 +59,9 @@
   .btn-all-courses {
     color: $bg-color2;
     text-decoration: none;
-    font-size: 45px;
+    font-size: 40px;
     -webkit-text-stroke-width: 2px;
+    font-family: $font_UTM_BryantLG;
 
     &:hover {
       text-decoration: underline;
@@ -79,7 +74,7 @@
     .container-title {
       .txt-container-title {
         margin: 55px 0 40px 0;
-        font-size: 45px;
+        font-size: 48px;
       }
     }
 
@@ -111,7 +106,7 @@
 
   .all-courses {
     .btn-all-courses {
-      font-size: 25px;
+      font-size: 23px;
     }
   }
 }

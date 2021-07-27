@@ -5,16 +5,9 @@
 
 .courses {
   margin-top: -90px;
-  display: flex;
-  justify-content: center;
 
   .row-courses {
-    width: 90%;
-    margin: 0;
-
     .col-courses {
-      display: flex;
-      justify-content: center;
     }
   }
 }
@@ -22,13 +15,11 @@
 .card {
   border-radius: 15px;
   box-shadow: $box-shadow;
-  width: 100%;
-  height: fit-content;
 }
 
 .bg-html {
   background: $bg-html;
-  height: 250px;
+  height: 200px;
   @include bg-card;
 
   .img-html {
@@ -38,7 +29,7 @@
 
 .bg-laravel {
   background: $bg-laravel;
-  height: 250px;
+  height: 200px;
   @include bg-card;
 
   .img-laravel {
@@ -48,7 +39,7 @@
 
 .bg-php {
   background: $bg-php;
-  height: 250px;
+  height: 200px;
   @include bg-card;
 
   .img-php {
@@ -63,23 +54,19 @@
   .card-title {
     font-family: $font_UTM_BryantLG;
     font-weight: 900;
-    color: $bg-color;
-    font-size: 36px;
+    color: $bg-color2;
+    font-size: 28px;
     margin: 10px 0;
-    text-shadow: $text-shadow-btn;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
   }
 
   .card-text {
     font-family: $font_UTM_BryantLG;
     margin: auto;
     font-weight: 800;
-    font-size: 27px;
+    font-size: 14px;
     color: $txt-color;
     margin-bottom: 0.5rem;
+    width: 80%;
     @include three-dot;
   }
 
@@ -87,16 +74,15 @@
     background: $bg-color;
     box-shadow: $box-shadow-btn;
     border-radius: 40px;
-    width: 70%;
     font-weight: 600;
-    font-size: 28px;
-    padding: 8px 0;
+    font-size: 18px;
+    padding: 8px 25px;
     margin: 10px 0;
     color: white;
     font-family: $font_UTM_BryantLG;
 
     &:hover {
-      font-size: 29px;
+      color: $txt-bg-color;
     }
   }
 
@@ -105,7 +91,6 @@
 @media only screen and (max-width: 768px) {
   .courses {
     .row-courses {
-      width: 100%;
 
       .col-courses {
         display: flex;
@@ -118,7 +103,6 @@
     padding: 5px;
 
     .card-title {
-      font-weight: 700;
       font-size: 20px;
     }
 
@@ -167,5 +151,10 @@
     .card-title {
       font-size: 20px;
     }
+
+    .btn-take-course {
+      padding: 6px 30px;
+      font-size: 13px;
+  }
   }
 }

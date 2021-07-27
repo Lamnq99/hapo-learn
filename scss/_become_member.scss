@@ -14,11 +14,11 @@
     text-align: center;
 
     .become-member-content {
-      font-size: 62px;
+      font-size: 60px;
       font-weight: 900;
       font-family: $font_UTM_BryantLG;
       color: white;
-      text-shadow: 1px 0 white;
+      -webkit-text-stroke-width: 2px;
       width: 54%;
     }
   }
@@ -28,17 +28,16 @@
   margin-top: 15px;
 
   .btn-start-learning {
-    padding: 10px 20px;
+    padding: 10px 35px;
     background-color: white;
-    font-family: $font_UTM_BryantLG;
-    color: $bg-color;
+    font-family: "utm_bryantlgregular";
+    color: #b2d235;
     text-decoration: none;
-    border-radius: 20px;
-    box-shadow: inset 0px 4px 4px $color-shadow-member;
+    border-radius: 40px;
+    box-shadow: inset 0px 2px 2px $color-shadow-member;
     font-size: 25px;
     font-weight: 900;
-    text-shadow: $text-shadow-btn;
-    font-size: 35px;
+    font-size: 30px;
 
     &:hover {
       text-decoration: underline;
@@ -53,9 +52,15 @@
 
     .become-member-main .become-member-content {
       width: 70%;
-      font-size: 45px;
+      font-size: 35px;
     }
   }
+
+  .btn-mem .btn-start-learning {
+    padding: 8px 25px;
+    font-weight: 900;
+    font-size: 18px;
+}
 }
 
 @media only screen and (max-width: 414px) {
@@ -64,11 +69,12 @@
 
     .become-member-main .become-member-content {
       width: 80%;
-      font-size: 27px;
+      font-size: 23px;
+      -webkit-text-stroke-width: 1px;
     }
 
     .btn-mem .btn-start-learning {
-      font-size: 30px;
+      font-size: 18px;
     }
   }
 }

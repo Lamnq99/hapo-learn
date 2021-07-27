@@ -17,7 +17,6 @@
 
 @mixin three-dot {
   overflow: hidden;
-  width: 80%;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -32,6 +31,7 @@
 
 $font_UTM_BryantLG: "utm_bryantlgregular";
 $icon-color: #969494;
+$border-feedback: #E2E2E2;
 $bg-color: #b2d235;
 $bg-color2: #90AB26;
 $txt-color: #505353;
