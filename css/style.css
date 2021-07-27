@@ -615,8 +615,15 @@
 
 .icon-feedback {
   margin-top: 3.5em;
-  font-weight: unset;
-  z-index: 1; }
+  font-weight: 300;
+  z-index: 999;
+  height: 1em;
+  color: #969494;
+  background: white; }
+  .icon-feedback:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none; }
 
 .row-feedback {
   display: flex;
@@ -632,7 +639,8 @@
       font-family: "utm_bryantlgregular";
       border-radius: 15px;
       margin: 0;
-      font-weight: 600; }
+      font-weight: 600;
+      position: relative; }
 
 .feedback-content {
   color: #505353;
@@ -641,31 +649,14 @@
   margin: 30px 0;
   font-size: 30px; }
 
-.feedback-content-con:after,
-.feedback-content-con:before {
-  content: "";
-  display: block;
+.img-down {
   position: absolute;
-  left: 50px;
-  top: 133px;
-  width: 0;
-  height: 0;
-  border-style: solid; }
-
-.feedback-content-con:after {
-  bottom: -21px;
-  border-color: white transparent transparent transparent;
-  border-width: 11px; }
-
-.feedback-content-con:before {
-  bottom: -22px;
-  border-color: #707575 transparent transparent transparent;
-  border-width: 11px; }
+  bottom: -25px;
+  left: 38px; }
 
 .icon-next {
   width: 20%;
-  height: 100%;
-  z-index: 999; }
+  height: 100%; }
 
 .user-feedback {
   margin: 30px 0; }
@@ -706,17 +697,20 @@
     padding-left: 15px;
     margin: 30px 0; }
 
+  .img-down {
+    left: 60px; }
+
   .feedback-content:after,
   .feedback-content:before {
-    left: 130px;
-    top: 133px; }
+    left: 50px;
+    top: 332px; }
 
   .icon-feedback {
     margin-top: 4.5em;
     z-index: 1; }
 
   .user-feedback .col-ava-user {
-    margin-left: 6em; }
+    margin-left: 2em; }
   .user-feedback .col-info-user .user-name-feedback,
   .user-feedback .col-info-user .course-name-feedback {
     margin: 0; }
@@ -754,10 +748,13 @@
     margin: 20px 0;
     font-size: 14px; }
 
+  .img-down {
+    left: 23px; }
+
   .feedback-content:after,
   .feedback-content:before {
-    left: 130px;
-    top: 133px; }
+    left: 20px;
+    top: 126px; }
 
   .icon-feedback {
     margin-top: 2.6em;

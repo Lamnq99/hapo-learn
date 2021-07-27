@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-
 @mixin txt-learnAny-atHapo {
   font-family: $font_UTM_BryantLG;
   color: $txt-bg-color;
@@ -32,6 +31,7 @@
 }
 
 $font_UTM_BryantLG: "utm_bryantlgregular";
+$icon-color: #969494;
 $bg-color: #b2d235;
 $bg-color2: #90AB26;
 $txt-color: #505353;
