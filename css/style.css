@@ -1007,7 +1007,7 @@ footer {
 .messenger {
   position: fixed;
   background-image: url("../images/bg_messenger.png");
-  right: 20px;
+  right: 5px;
   top: 32em;
   padding: 7px;
   background-repeat: no-repeat;
@@ -1026,7 +1026,8 @@ footer {
   display: none;
   font-family: "Open Sans", sans-serif;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 999; }
 
 .txt-name {
   margin: 1rem 0 0 4.5rem;
@@ -1087,7 +1088,7 @@ footer {
     bottom: 10em; }
 
   .messenger-box {
-    width: 65%;
+    width: 80%;
     height: 215px;
     bottom: 13em; }
 
@@ -1095,7 +1096,6 @@ footer {
     font-size: 13px; }
 
   .main-chat .txt-chat {
-    padding: 0;
     font-size: 13px; }
 
   .login-messenger {
