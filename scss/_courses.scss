@@ -67,6 +67,10 @@
     font-size: 36px;
     margin: 10px 0;
     text-shadow: $text-shadow-btn;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 
   .card-text {
@@ -82,14 +86,20 @@
   .btn-take-course {
     background: $bg-color;
     box-shadow: $box-shadow-btn;
-    border-radius: 22px;
+    border-radius: 40px;
     width: 70%;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 28px;
+    padding: 8px 0;
     margin: 10px 0;
     color: white;
     font-family: $font_UTM_BryantLG;
+
+    &:hover {
+      font-size: 29px;
+    }
   }
+
 }
 
 @media only screen and (max-width: 768px) {

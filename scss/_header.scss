@@ -42,6 +42,10 @@
   }
 }
 
+.navbar-nav .active {
+  background: $bg-color;
+}
+
 .nav-item {
   padding: 0px 15px;
   border-radius: 20px;

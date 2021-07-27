@@ -10,7 +10,7 @@
       display: inline-block;
       margin: 100px 0 60px 0;
       font-size: 80px;
-      text-shadow: 1px 0 $txt-bg-color;
+      -webkit-text-stroke-width: 3px;
       font-weight: 900;
       color: $txt-bg-color;
       border-bottom: 5px $bg-color solid;
@@ -63,9 +63,14 @@
   text-align: center;
 
   .btn-all-courses {
-    color: $bg-color;
+    color: $bg-color2;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 45px;
+    -webkit-text-stroke-width: 2px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

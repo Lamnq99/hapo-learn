@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-$banner: url("../images/hapo_learn_banner1.png");
 
 @font-face {
   font-family: "utm_bryantlgregular";
-  src: url(../assets/font/utm_bryantlg-webfont.woff2) format("woff2"),
-    url(../assets/fonts/utm_bryantlg-webfont.woff) format("woff");
+  src: url(../assets/font/UTM_BryantLG.ttf) format("woff2"),
+    url(../assets/fonts/UTM_BryantLG_B.ttf) format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -34,6 +33,7 @@ $banner: url("../images/hapo_learn_banner1.png");
 
 $font_UTM_BryantLG: "utm_bryantlgregular";
 $bg-color: #b2d235;
+$bg-color2: #90AB26;
 $txt-color: #505353;
 $txt-bg-color: #11114e;
 $box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);

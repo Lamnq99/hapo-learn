@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: "utm_bryantlgregular";
-  src: url(../assets/font/utm_bryantlg-webfont.woff2) format("woff2"), url(../assets/fonts/utm_bryantlg-webfont.woff) format("woff");
+  src: url(../assets/font/UTM_BryantLG.ttf) format("woff2"), url(../assets/fonts/UTM_BryantLG_B.ttf) format("woff");
   font-weight: normal;
   font-style: normal; }
 .header {
@@ -35,6 +35,9 @@
     width: 100%;
     display: flex;
     justify-content: flex-end; }
+
+.navbar-nav .active {
+  background: #b2d235; }
 
 .nav-item {
   padding: 0px 15px;
@@ -123,32 +126,34 @@
       font-family: "utm_bryantlgregular";
       color: #11114e;
       text-decoration: none;
-      font-size: 60px;
+      font-size: 62px;
       font-weight: bolder;
       margin-bottom: 0; }
     .banner .banner-contents .at-hapo {
       font-family: "utm_bryantlgregular";
       color: #11114e;
       text-decoration: none;
-      font-size: 60px;
+      font-size: 62px;
       font-weight: 900;
-      text-shadow: 2px 1px #11114e;
+      -webkit-text-stroke-width: 3px;
       margin: 0; }
     .banner .banner-contents .method-study {
       color: #505353;
       font-size: 32px;
       font-family: "utm_bryantlgregular";
       margin: 15px 0;
-      line-height: 28px;
-      font-weight: 600; }
+      line-height: 28px; }
     .banner .banner-contents .btn-start-learning {
       display: inline-block;
       background-color: #b2d235;
-      padding: 15px 35px;
+      padding: 15px 50px;
       text-decoration: none;
-      border-radius: 25px;
+      border-radius: 50px;
       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
       margin-top: 40px; }
+      .banner .banner-contents .btn-start-learning:hover {
+        color: white;
+        text-decoration: underline; }
 
 .img-owl {
   padding: 0px 5px;
@@ -170,11 +175,12 @@
       font-size: 26px; }
     .banner .banner-contents .at-hapo {
       font-size: 26px;
-      text-shadow: 1px 1px #11114e; }
+      -webkit-text-stroke-width: 2px; }
     .banner .banner-contents .method-study {
       font-size: 12px;
       margin: 10px 0;
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 20px; }
     .banner .banner-contents .btn-start-learning {
       padding: 10px 25px;
       margin-top: 8px; }
@@ -205,7 +211,7 @@
         font-size: 28px; }
       .banner .banner-contents .method-study {
         font-size: 15px;
-        line-height: 24px;
+        line-height: 20px;
         margin: 6px 0; }
       .banner .banner-contents .btn-start-learning {
         padding: 10px 32px;
@@ -280,7 +286,11 @@
     color: #b2d235;
     font-size: 36px;
     margin: 10px 0;
-    text-shadow: 1px 1px #6f8710; }
+    text-shadow: 1px 1px #6f8710;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; }
   .card-body .card-text {
     font-family: "utm_bryantlgregular";
     margin: auto;
@@ -296,13 +306,16 @@
   .card-body .btn-take-course {
     background: #b2d235;
     box-shadow: inset 0px 1.5px 2px #6f8710;
-    border-radius: 22px;
+    border-radius: 40px;
     width: 70%;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 28px;
+    padding: 8px 0;
     margin: 10px 0;
     color: white;
     font-family: "utm_bryantlgregular"; }
+    .card-body .btn-take-course:hover {
+      font-size: 29px; }
 
 @media only screen and (max-width: 768px) {
   .courses .row-courses {
@@ -357,7 +370,7 @@
       display: inline-block;
       margin: 100px 0 60px 0;
       font-size: 80px;
-      text-shadow: 1px 0 #11114e;
+      -webkit-text-stroke-width: 3px;
       font-weight: 900;
       color: #11114e;
       border-bottom: 5px #b2d235 solid;
@@ -402,9 +415,12 @@
 .all-courses {
   text-align: center; }
   .all-courses .btn-all-courses {
-    color: #b2d235;
+    color: #90AB26;
     text-decoration: none;
-    font-size: 30px; }
+    font-size: 45px;
+    -webkit-text-stroke-width: 2px; }
+    .all-courses .btn-all-courses:hover {
+      text-decoration: underline; }
 
 @media only screen and (max-width: 768px) {
   .other-courses .container-title .txt-container-title {
@@ -459,14 +475,14 @@
 .why-hapo {
   width: 100%;
   padding: 0;
-  margin-top: 100px; }
+  margin-top: 130px; }
 
 .container-laptop {
   position: relative; }
   .container-laptop .img-laptop {
     position: absolute;
     left: 0;
-    bottom: -23em; }
+    bottom: -16em; }
 
 .row-why-hapo {
   height: 750px;
@@ -480,10 +496,11 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
-    width: 55%; }
+    justify-content: flex-end;
+    margin-bottom: 7em;
+    width: 50%; }
     .row-why-hapo .col-left .txt-why-hapo {
-      font-size: 75px;
+      font-size: 85px;
       font-weight: 600;
       color: white;
       text-shadow: 1px 1px white;
@@ -491,12 +508,13 @@
       font-family: "utm_bryantlgregular"; }
     .row-why-hapo .col-left .txt-content {
       color: white;
-      font-size: 30px;
+      font-size: 27px;
       font-family: "utm_bryantlgregular"; }
   .row-why-hapo .col-right {
-    width: 45%; }
+    width: 50%;
+    text-align: left; }
     .row-why-hapo .col-right .img-computer {
-      width: 100%;
+      width: 95%;
       margin-top: 6em; }
 
 @media only screen and (max-width: 768px) {
@@ -506,7 +524,7 @@
       position: absolute;
       left: 0;
       bottom: -13em;
-      width: 36%;
+      width: 30%;
       z-index: 1; }
 
   .row-why-hapo {
@@ -517,7 +535,7 @@
     .row-why-hapo .col-left {
       width: 60%;
       justify-content: flex-end;
-      margin-bottom: 4em; }
+      margin-bottom: 1em; }
       .row-why-hapo .col-left .txt-why-hapo {
         font-size: 54px;
         color: white;
@@ -538,8 +556,8 @@
     margin-top: 55px; }
 
   .container-laptop .img-laptop {
-    bottom: -11em;
-    width: 50%; }
+    bottom: -10em;
+    width: 40%; }
 
   .row-why-hapo {
     height: 610px;
@@ -554,7 +572,7 @@
         width: 65%;
         margin-bottom: 30px;
         position: unset;
-        margin-left: 3em; }
+        margin-left: 4em; }
       .row-why-hapo .col-left .txt-content {
         font-size: 14px; }
     .row-why-hapo .col-right {
@@ -597,7 +615,8 @@
 
 .icon-feedback {
   margin-top: 3.5em;
-  font-weight: unset; }
+  font-weight: unset;
+  z-index: 1; }
 
 .row-feedback {
   display: flex;
@@ -645,7 +664,8 @@
 
 .icon-next {
   width: 20%;
-  height: 100%; }
+  height: 100%;
+  z-index: 999; }
 
 .user-feedback {
   margin: 30px 0; }
@@ -774,7 +794,7 @@
       font-family: "utm_bryantlgregular";
       color: white;
       text-shadow: 1px 0 white;
-      width: 48%; }
+      width: 54%; }
 
 .btn-mem {
   margin-top: 15px; }
@@ -791,7 +811,7 @@
     text-shadow: 1px 1px #6f8710;
     font-size: 35px; }
     .btn-mem .btn-start-learning:hover {
-      text-decoration: none;
+      text-decoration: underline;
       color: #b2d235; }
 
 @media only screen and (max-width: 768px) {
@@ -872,20 +892,31 @@ footer {
       width: 70%;
       cursor: pointer; }
     .content .logo .logo-sub {
-      width: 50%;
+      width: 58%;
       float: right;
       margin-right: 90px;
       text-align: right;
-      color: white; }
+      color: white;
+      font-family: "utm_bryantlgregular";
+      font-size: 22px; }
   .content .social-footer {
     width: 35%;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "utm_bryantlgregular"; }
+    .content .social-footer a {
+      font-size: 15px; }
     .content .social-footer .icon-footer {
       color: white; }
+
+.img-icon {
+  width: 60px; }
+
+.popover-body {
+  padding: 10px 5px;
+  font-size: 15px; }
 
 .title-footer {
   width: 30%;
@@ -895,7 +926,11 @@ footer {
     color: white; }
     .title-footer .table td {
       border: none;
-      cursor: pointer; }
+      cursor: pointer;
+      font-family: "utm_bryantlgregular";
+      font-size: 22px; }
+      .title-footer .table td:hover {
+        text-decoration: underline; }
 
 .copyrighted {
   background-color: #454545;
@@ -904,7 +939,9 @@ footer {
   padding: 5px 0; }
   .copyrighted .copyrighted-content {
     color: white;
-    margin: 0; }
+    margin: 0;
+    font-size: 20px;
+    font-family: "utm_bryantlgregular"; }
 
 @media only screen and (max-width: 768px) {
   footer {
@@ -928,12 +965,17 @@ footer {
         float: none;
         margin: 0;
         text-align: left;
-        font-size: 15px; }
-    .content .social-footer .icon-footer {
-      font-size: 30px; }
+        font-size: 16px; }
+
+  .img-icon {
+    width: 40px; }
 
   .title-footer .table td {
-    padding: 10px; } }
+    padding: 10px;
+    font-size: 16px; }
+
+  .copyrighted .copyrighted-content {
+    font-size: 16px; } }
 @media only screen and (max-width: 414px) {
   .content {
     flex-direction: column;
@@ -1076,10 +1118,10 @@ footer {
     .tabs-login-register .nav-item a {
       color: #b2d235;
       text-transform: uppercase;
-      font-weight: 500;
-      font-family: "Roboto", sans-serif;
-      font-size: 17px;
-      padding: 10px 0; }
+      font-weight: 600;
+      font-family: "utm_bryantlgregular";
+      font-size: 25px;
+      padding: 15px 0; }
 
 .btn-close {
   margin: 0;
@@ -1096,20 +1138,26 @@ footer {
     background-color: white;
     border-radius: 50%; }
 
+.nav-tabs .nav-link {
+  border: 0; }
+
 .nav-tabs .nav-link.active {
   color: white;
   background-color: #b2d235; }
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: unset; }
 
 .tab-content {
   width: 98%;
   margin: auto; }
   .tab-content .tab-pane {
-    margin: 15px 0;
-    font-size: 14px; }
+    margin: 15px 0; }
 
 .form-login,
 .form-register {
-  font-family: "Roboto", sans-serif; }
+  font-family: "utm_bryantlgregular"; }
   .form-login .label-username,
   .form-login .label-password,
   .form-login .label-email,
@@ -1119,7 +1167,9 @@ footer {
   .form-register .label-email,
   .form-register .label-repassword {
     width: 100%;
-    margin: 5px 0; }
+    margin: 5px 0;
+    font-size: 23px;
+    font-weight: 600; }
   .form-login .txt-username,
   .form-login .txt-password,
   .form-login .txt-email,
@@ -1129,75 +1179,51 @@ footer {
   .form-register .txt-email,
   .form-register .txt-repassword {
     width: 100%;
-    padding: 5px 0; }
+    line-height: 55px; }
 
 .option-login {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16px; }
+  margin-top: 16px;
+  font-size: 23px;
+  font-weight: 600; }
+  .option-login .box-remember {
+    position: unset;
+    display: unset;
+    padding: 0; }
+    .option-login .box-remember .remember-me-checkbox {
+      position: unset;
+      margin: 0; }
   .option-login .forgot-pass {
     color: #b2d235; }
-
-.remember-me-checkbox {
-  cursor: pointer; }
-
-.remember-me-checkbox:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 0;
-  top: -1px;
-  border: 1px solid #707575;
-  background-color: white; }
-
-.remember-me-checkbox:checked:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 0;
-  top: -1px;
-  background-color: #b2d235; }
-
-.remember-me-checkbox:checked:after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  left: 5px; }
 
 .btn-login,
 .btn-register {
   text-transform: uppercase;
   color: white;
   padding: 7px 20px;
-  margin: 20px auto;
+  margin: 25px auto;
   background-color: #b2d235;
   box-shadow: inset 0px 1.5px 2px #6f8710;
   display: block;
   text-align: center;
-  border-radius: 20px;
-  width: 50%; }
+  border-radius: 35px;
+  width: 65%;
+  font-size: 25px;
+  font-weight: 600; }
 
 .login-with {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 20px 0; }
+  margin: 30px 0; }
   .login-with p {
     margin: 0;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "utm_bryantlgregular";
     color: #454545; }
 
 .login-with::before,
@@ -1214,19 +1240,21 @@ footer {
 
 .with-gg,
 .with-face {
-  font-size: 16px;
+  font-size: 23px;
   text-align: center;
   color: white; }
   .with-gg .icon-gg,
   .with-gg .icon-face,
   .with-face .icon-gg,
   .with-face .icon-face {
-    padding: 10px; }
+    padding: 18px; }
 
 .with-gg {
-  background-color: #dc4e41; }
+  background-color: #dc4e41;
+  padding: 5px 0; }
 
 .with-face {
-  background-color: #3b5999; }
+  background-color: #3b5999;
+  padding: 5px 0; }
 
 /*# sourceMappingURL=style.css.map */

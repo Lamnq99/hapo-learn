@@ -21,11 +21,13 @@ footer {
     }
 
     .logo-sub {
-      width: 50%;
+      width: 58%;
       float: right;
       margin-right: 90px;
       text-align: right;
       color: white;
+      font-family: $font_UTM_BryantLG;
+      font-size: 22px;
     }
   }
 
@@ -33,14 +35,27 @@ footer {
     width: 35%;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    font-family: $font-OpenS;
+    font-family: $font_UTM_BryantLG;
+
+    a {
+      font-size: 15px;
+    }
 
     .icon-footer {
       color: white;
     }
   }
+}
+
+.img-icon {
+  width: 60px;
+}
+
+.popover-body {
+  padding: 10px 5px;
+  font-size: 15px;
 }
 
 .title-footer {
@@ -54,6 +69,12 @@ footer {
     td {
       border: none;
       cursor: pointer;
+      font-family: $font_UTM_BryantLG;
+      font-size: 22px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -67,6 +88,8 @@ footer {
   .copyrighted-content {
     color: white;
     margin: 0;
+    font-size: 20px;
+    font-family: $font_UTM_BryantLG;
   }
 }
 
@@ -97,20 +120,25 @@ footer {
         float: none;
         margin: 0;
         text-align: left;
-        font-size: 15px;
+        font-size: 16px;
       }
     }
+  }
 
-    .social-footer {
-      .icon-footer {
-        font-size: 30px;
-      }
-    }
+  .img-icon {
+    width: 40px;
   }
 
   .title-footer {
     .table td {
       padding: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .copyrighted {
+    .copyrighted-content {
+      font-size: 16px;
     }
   }
 }

@@ -14,10 +14,10 @@
     a {
       color: $bg-color;
       text-transform: uppercase;
-      font-weight: 500;
-      font-family: $font-Roboto;
-      font-size: 17px;
-      padding: 10px 0;
+      font-weight: 600;
+      font-family: $font_UTM_BryantLG;
+      font-size: 25px;
+      padding: 15px 0;
     }
   }
 }
@@ -40,9 +40,18 @@
   }
 }
 
+.nav-tabs .nav-link {
+  border: 0;
+}
+
 .nav-tabs .nav-link.active {
   color: white;
   background-color: $bg-color;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: unset;
 }
 
 .tab-content {
@@ -51,13 +60,12 @@
 
   .tab-pane {
     margin: 15px 0;
-    font-size: 14px;
   }
 }
 
 .form-login,
 .form-register {
-  font-family: $font-Roboto;
+  font-family: $font_UTM_BryantLG;
 
   .label-username,
   .label-password,
@@ -65,6 +73,8 @@
   .label-repassword {
     width: 100%;
     margin: 5px 0;
+    font-size: 23px;
+    font-weight: 600;
   }
 
   .txt-username,
@@ -72,7 +82,7 @@
   .txt-email,
   .txt-repassword {
     width: 100%;
-    padding: 5px 0;
+    line-height: 55px;
   }
 }
 
@@ -82,50 +92,23 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
+  font-size: 23px;
+  font-weight: 600;
+
+  .box-remember {
+    position: unset;
+    display: unset;
+    padding: 0;
+
+    .remember-me-checkbox {
+      position: unset;
+      margin: 0;
+    }
+  }
 
   .forgot-pass {
     color: $bg-color;
   }
-}
-
-.remember-me-checkbox {
-  cursor: pointer;
-}
-
-.remember-me-checkbox:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 0;
-  top: -1px;
-  border: 1px solid $color-feedback;
-  background-color: white;
-}
-
-.remember-me-checkbox:checked:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 0;
-  top: -1px;
-  background-color: $bg-color;
-}
-
-.remember-me-checkbox:checked:after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  left: 5px;
 }
 
 .btn-login,
@@ -133,25 +116,28 @@
   text-transform: uppercase;
   color: white;
   padding: 7px 20px;
-  margin: 20px auto;
+  margin: 25px auto;
   background-color: $bg-color;
   box-shadow: $box-shadow-btn;
   display: block;
   text-align: center;
-  border-radius: 20px;
-  width: 50%;
+  border-radius: 35px;
+  width: 65%;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .login-with {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
 
   p {
     margin: 0;
-    font-size: 20px;
-    font-family: $font-Roboto;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: $font_UTM_BryantLG;
     color: $color-footer;
   }
 }
@@ -173,20 +159,22 @@
 
 .with-gg,
 .with-face {
-  font-size: 16px;
+  font-size: 23px;
   text-align: center;
   color: white;
 
   .icon-gg,
   .icon-face {
-    padding: 10px;
+    padding: 18px;
   }
 }
 
 .with-gg {
   background-color: $gg-color;
+  padding: 5px 0;
 }
 
 .with-face {
   background-color: $face-color;
+  padding: 5px 0;
 }
