@@ -1,5 +1,14 @@
-.modal-header {
-  padding: 0;
+.modal-dialog {
+  margin: 6.5rem auto;
+
+  .modal-content {
+    width: 95%;
+    margin: auto;
+
+    .modal-header {
+      padding: 0;
+    }
+  }
 }
 
 .tabs-login-register {
@@ -27,8 +36,8 @@
   padding: 0px;
   color: $bg-color;
   position: absolute;
-  top: -7px;
-  right: -7px;
+  top: -10px;
+  right: -10px;
   z-index: 1;
   opacity: 1;
   color: $bg-color;
@@ -38,10 +47,18 @@
     background-color: white;
     border-radius: 50%;
   }
+
+  .fa-lg {
+    font-size: 1.6em;
+  }
 }
 
 .nav-tabs .nav-link {
   border: 0;
+
+  &:hover {
+    background-color: white;
+  }
 }
 
 .nav-tabs .nav-link.active {
@@ -55,7 +72,7 @@
 }
 
 .tab-content {
-  width: 98%;
+  width: 93%;
   margin: auto;
 
   .tab-pane {
@@ -73,8 +90,9 @@
   .label-repassword {
     width: 100%;
     margin: 5px 0;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
+    color: $txt-color;
   }
 
   .txt-username,
@@ -83,6 +101,8 @@
   .txt-repassword {
     width: 100%;
     line-height: 55px;
+    background-color: $input-color;
+    border: 1px solid $border-feedback;
   }
 }
 
@@ -96,7 +116,7 @@
   font-weight: 600;
 
   .box-remember {
-    position: unset;
+    position: relative;
     display: unset;
     padding: 0;
 
@@ -104,10 +124,17 @@
       position: unset;
       margin: 0;
     }
+
+    .form-check-label {
+      font-size: 18px;
+      color: $txt-color;
+    }
   }
 
   .forgot-pass {
     color: $bg-color;
+    text-decoration: underline;
+    font-size: 18px;
   }
 }
 
@@ -122,8 +149,8 @@
   display: block;
   text-align: center;
   border-radius: 35px;
-  width: 65%;
-  font-size: 25px;
+  width: 35%;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -131,14 +158,14 @@
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 30px 0;
+  margin: 23px 0;
 
   p {
     margin: 0;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
     font-family: $font_UTM_BryantLG;
-    color: $color-footer;
+    color: $txt-color;
   }
 }
 
@@ -146,7 +173,7 @@
 .login-with::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid $color-feedback;
+  border-bottom: 1px solid $txt-color;
 }
 
 .login-with::before {
@@ -159,22 +186,64 @@
 
 .with-gg,
 .with-face {
-  font-size: 23px;
+  font-size: 20px;
   text-align: center;
   color: white;
 
   .icon-gg,
   .icon-face {
-    padding: 18px;
+    padding: 15px;
   }
 }
 
 .with-gg {
   background-color: $gg-color;
-  padding: 5px 0;
+  padding: 2px 0;
+  border-radius: 5px;
 }
 
 .with-face {
   background-color: $face-color;
-  padding: 5px 0;
+  padding: 2px 0;
+  border-radius: 5px;
+}
+
+.remember-me-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+.remember-me-checkbox:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -3px;
+  top: 9px;
+  border: 1px solid $txt-color;
+  border-radius: 5px;
+  background-color: white;
+}
+.remember-me-checkbox:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 9px;
+  left: -3px;
+  border: none;
+  background-color: $bg-color;
+}
+.remember-me-checkbox:checked:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 11px;
+  left: 3px;
 }

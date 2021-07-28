@@ -1,20 +1,21 @@
 .messenger {
   position: fixed;
   background-image: url("../images/bg_messenger.png");
-  right: 5px;
+  right: 38px;
   top: 32em;
-  padding: 7px;
+  padding: 10px;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .messenger-box {
   position: fixed;
-  right: 22px;
-  top: 14em;
-  width: 30%;
-  height: 270px;
+  right: 50px;
+  top: 19em;
+  width: 22%;
+  height: 190px;
   background-color: white;
   box-shadow: 0px 0px 8px $color-feedback;
   border-radius: 20px;
@@ -28,6 +29,7 @@
 .txt-name {
   margin: 1rem 0 0 4.5rem;
   color: $color-feedback;
+  font-size: 12px;
 }
 
 .main-chat {
@@ -46,6 +48,7 @@
     background: $bg-chat;
     color: $txt-color;
     font-weight: 600;
+    font-size: 12px;
   }
 }
 
@@ -55,40 +58,47 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
   font-family: $font-OpenS;
-  margin: 0 50px;
-  padding: 5px 0;
+  margin: auto;
+  padding: 10px 10px;
   cursor: pointer;
+  width: 70%;
 
   img {
-    width: 10%;
+    width: 6%;
     margin: 0 10px;
   }
 
   .txt-login {
     margin: 0;
     color: white;
+    font-size: 12px;
   }
 }
 
 .chat-with-hapo {
   color: $color-feedback;
   font-family: $font-OpenS;
-  margin: 1rem 0;
+  margin: 5px 0;
   text-align: center;
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 768px) {
   .messenger {
     bottom: 15em;
     top: unset;
+    width: 6%;
+    padding: 5px;
+    right: 20px;
   }
 
   .messenger-box {
+    right: 28px;
     width: 50%;
     top: unset;
-    bottom: 20em;
+    bottom: 19em;
   }
 }
 
@@ -117,7 +127,6 @@
   }
 
   .login-messenger {
-    margin: 0 10px;
 
     .txt-login {
       font-size: 13px;
