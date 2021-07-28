@@ -2,7 +2,7 @@
   position: fixed;
   background-image: url("../images/bg_messenger.png");
   right: 38px;
-  top: 32em;
+  bottom: 3em;
   padding: 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,9 +13,7 @@
 .messenger-box {
   position: fixed;
   right: 50px;
-  top: 19em;
-  width: 22%;
-  height: 190px;
+  bottom: 8em;
   background-color: white;
   box-shadow: 0px 0px 8px $color-feedback;
   border-radius: 20px;
@@ -24,56 +22,60 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 999;
+  padding: 1em 2em 1em 3em;
+  align-items: center;
+}
+
+.icon-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 8%;
 }
 
 .txt-name {
-  margin: 1rem 0 0 4.5rem;
   color: $color-feedback;
   font-size: 12px;
+  width: 90%;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .main-chat {
   display: flex;
-  flex-direction: row;
   align-items: center;
 
   .ava-owl {
-    margin-left: 1rem;
+    padding: 0.6rem;
+    position: absolute;
+    left: 0;
   }
 
   .txt-chat {
-    margin: 0 1rem;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 12px 15px;
+    border-radius: 15px;
     background: $bg-chat;
     color: $txt-color;
     font-weight: 600;
     font-size: 12px;
+    width: fit-content;
   }
 }
 
-.login-messenger {
-  background-color: $mess-color;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-family: $font-OpenS;
-  margin: auto;
-  padding: 10px 10px;
-  cursor: pointer;
-  width: 70%;
+.txt-login {
+  color: white;
+  font-size: 12px;
+  padding: 10px 25px;
+  background: $mess-color;
+  border-radius: 15px;
+  text-align: center;
+  width: fit-content;
+  margin-bottom: 5px;
 
-  img {
-    width: 6%;
-    margin: 0 10px;
-  }
-
-  .txt-login {
-    margin: 0;
-    color: white;
-    font-size: 12px;
+  .fa-facebook-messenger {
+    padding: 3px;
   }
 }
 
@@ -83,22 +85,19 @@
   margin: 5px 0;
   text-align: center;
   font-size: 12px;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
   .messenger {
-    bottom: 15em;
-    top: unset;
+    bottom: 12em;
     width: 6%;
     padding: 5px;
     right: 20px;
   }
 
   .messenger-box {
-    right: 28px;
-    width: 50%;
-    top: unset;
-    bottom: 19em;
+    bottom: 17em;
   }
 }
 
@@ -111,29 +110,7 @@
   }
 
   .messenger-box {
-    width: 80%;
-    height: 215px;
-    bottom: 13em;
-  }
-
-  .txt-name {
-    font-size: 13px;
-  }
-
-  .main-chat {
-    .txt-chat {
-      font-size: 13px;
-    }
-  }
-
-  .login-messenger {
-
-    .txt-login {
-      font-size: 13px;
-    }
-  }
-
-  .chat-with-hapo {
-    font-size: 13px;
+    bottom: 14em;
+    right: 22px;
   }
 }

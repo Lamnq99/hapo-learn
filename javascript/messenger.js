@@ -6,4 +6,8 @@ $(document).ready(function () {
       $("#messenger-box").css({ "display": "none" });
     }
   });
+
+  $(".icon-close").click(function () {
+    $("#messenger-box").css({ "display": "none" });
+  });
 });

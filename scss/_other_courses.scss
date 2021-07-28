@@ -64,7 +64,10 @@
     font-family: $font_UTM_BryantLG;
 
     &:hover {
-      text-decoration: underline;
+      letter-spacing: 0.5px;
+    }
+    .arrow-icon {
+      font-weight: 300;
     }
   }
 }
@@ -75,6 +78,8 @@
       .txt-container-title {
         margin: 55px 0 40px 0;
         font-size: 48px;
+        -webkit-text-stroke-width: 2px;
+        font-weight: unset;
       }
     }
 

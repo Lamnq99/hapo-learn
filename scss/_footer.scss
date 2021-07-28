@@ -14,20 +14,21 @@ footer {
 
   .logo {
     width: 35%;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
 
     .logo-footer {
-      width: 60%;
+      width: 56%;
       cursor: pointer;
     }
 
     .logo-sub {
-      width: 58%;
       float: left;
-      text-align: right;
+      text-align: left;
       color: white;
       font-family: $font_UTM_BryantLG;
-      font-size: 22px;
+      font-size: 20px;
+      margin-left: 3em;
     }
   }
 
@@ -70,7 +71,8 @@ footer {
       border: none;
       cursor: pointer;
       font-family: $font_UTM_BryantLG;
-      font-size: 22px;
+      font-size: 20px;
+      -webkit-text-stroke-width: 0.3px;
 
       &:hover {
         text-decoration: underline;
@@ -88,7 +90,7 @@ footer {
   .copyrighted-content {
     color: white;
     margin: 0;
-    font-size: 17px;
+    font-size: 15px;
     font-family: $font_UTM_BryantLG;
   }
 }
@@ -121,7 +123,7 @@ footer {
         float: none;
         margin: 0;
         text-align: left;
-        font-size: 15px;
+        font-size: 16px;
       }
     }
 
@@ -139,13 +141,13 @@ footer {
 
     .table td {
       padding: 7px 10px;
-      font-size: 15px;
+      font-size: 18px;
     }
   }
 
   .copyrighted {
     .copyrighted-content {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 }
@@ -188,6 +190,7 @@ footer {
 
       td {
         padding: 10px 45px;
+        font-size: 17px;
       }
     }
   }
@@ -195,5 +198,11 @@ footer {
   .popover-body {
     padding: 3px 5px;
     font-size: 10px;
+}
+
+.copyrighted {
+  .copyrighted-content {
+    font-size: 15px;
+  }
 }
 }
