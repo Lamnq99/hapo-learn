@@ -71,6 +71,8 @@
 
   .logo {
     width: 45%; }
+    .logo .navbar-brand {
+      text-align: center; }
 
   .btn-navbar {
     width: 100%; }
