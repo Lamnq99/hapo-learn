@@ -21,7 +21,7 @@
   padding: 0; }
   .logo .navbar-brand {
     width: 100%;
-    text-align: center; }
+    text-align: left; }
     .logo .navbar-brand .img-logo {
       width: 80%; }
 
@@ -527,7 +527,7 @@
         font-size: 50px;
         color: white;
         position: absolute;
-        bottom: 5.5em;
+        bottom: 6em;
         left: 235px;
         width: 55%; }
       .row-why-hapo .col-left .txt-content {
