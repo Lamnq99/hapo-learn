@@ -156,10 +156,11 @@ footer {
   .content {
     flex-direction: column;
     padding-bottom: 15px;
+    padding-left: 10px;
 
     .logo {
       order: 2;
-      width: 60%;
+      width: 64%;
 
       .logo-sub {
         margin-left: 10px;
@@ -175,7 +176,8 @@ footer {
       bottom: 65px;
 
       a{
-        font-size: 10px;;
+        font-size: 10px;
+        margin: 0 6px;
       }
     }
   }
@@ -186,11 +188,15 @@ footer {
 
     .table {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
 
       td {
-        padding: 10px 45px;
+        padding-left: 10px;
         font-size: 17px;
+      }
+
+      td.td-left {
+        padding-right: 120px;
       }
     }
   }

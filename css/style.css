@@ -34,6 +34,10 @@
     display: flex;
     justify-content: flex-end; }
 
+.img-close-header {
+  width: 60%;
+  display: none; }
+
 .nav-item {
   border-radius: 20px;
   font-size: 15px; }
@@ -333,7 +337,8 @@
 @media only screen and (max-width: 768px) {
   .courses .row-courses .col-courses {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding: 5px 5px; }
 
   .card-body {
     padding: 5px; }
@@ -443,7 +448,8 @@
     margin: 0 0 20px 0; }
     .other-courses .row-other-courses .col-courses {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 5px; }
 
   .bg-css {
     height: 125px;
@@ -979,10 +985,11 @@ footer {
 @media only screen and (max-width: 414px) {
   .content {
     flex-direction: column;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    padding-left: 10px; }
     .content .logo {
       order: 2;
-      width: 60%; }
+      width: 64%; }
       .content .logo .logo-sub {
         margin-left: 10px;
         padding: 5px 0;
@@ -993,17 +1000,20 @@ footer {
       right: 0px;
       bottom: 65px; }
       .content .social-footer a {
-        font-size: 10px; }
+        font-size: 10px;
+        margin: 0 6px; }
 
   .title-footer {
     order: 1;
     width: 100%; }
     .title-footer .table {
       display: flex;
-      justify-content: center; }
+      justify-content: flex-start; }
       .title-footer .table td {
-        padding: 10px 45px;
+        padding-left: 10px;
         font-size: 17px; }
+      .title-footer .table td.td-left {
+        padding-right: 120px; }
 
   .popover-body {
     padding: 3px 5px;
@@ -1071,7 +1081,7 @@ footer {
 .txt-login {
   color: white;
   font-size: 12px;
-  padding: 10px 25px;
+  padding: 10px 40px;
   background: #3184f7;
   border-radius: 15px;
   text-align: center;
@@ -1098,7 +1108,8 @@ footer {
     right: 20px; }
 
   .messenger-box {
-    bottom: 17em; } }
+    bottom: 16em;
+    right: 25px; } }
 @media only screen and (max-width: 414px) {
   .messenger {
     height: 40px;

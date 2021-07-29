@@ -67,7 +67,7 @@
 .txt-login {
   color: white;
   font-size: 12px;
-  padding: 10px 25px;
+  padding: 10px 40px;
   background: $mess-color;
   border-radius: 15px;
   text-align: center;
@@ -99,7 +99,8 @@
   }
 
   .messenger-box {
-    bottom: 17em;
+    bottom: 16em;
+    right: 25px;
   }
 }
 
